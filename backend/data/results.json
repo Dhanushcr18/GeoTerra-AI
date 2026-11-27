@@ -1,0 +1,379 @@
+{
+  "sample": false,
+  "generated_at": "2026-11-25T21:55:48.108874+00:00",
+  "model": {
+    "name": "U-Net (ResNet-34, SMP)",
+    "trained_on": "Sen1Floods11 hand-labeled",
+    "metrics": {
+      "val": {
+        "iou": 0.6435,
+        "f1": 0.7831
+      },
+      "test": {
+        "iou": 0.6627,
+        "f1": 0.7971
+      },
+      "bolivia": {
+        "iou": 0.5622,
+        "f1": 0.7197
+      }
+    },
+    "baseline_metrics": {
+      "test": {
+        "iou": 0.445,
+        "f1": 0.6159
+      },
+      "bolivia": {
+        "iou": 0.617,
+        "f1": 0.7632
+      }
+    }
+  },
+  "flood": {
+    "aoi_name": "Bengaluru Urban & Peri-Urban Catchment",
+    "scene_before": "S1A_IW_GRDH_1SDV_20260111T004014_20260111T004039_062712_07DD09_rtc",
+    "scene_after": "S1D_IW_GRDH_1SDV_20261114T003932_20261114T003957_005456_00A6B6_rtc",
+    "date_before": "2026-01-11",
+    "date_after": "2026-11-14",
+    "validated": false,
+    "flooded_area_ha": 52.23,
+    "cropland_affected_ha": 19.37,
+    "built_up_affected_ha": 0.32,
+    "roads_affected_km": 0.0,
+    "settlements_affected": [
+      {
+        "name": "Bengaluru Catchment Zone 1",
+        "lat": 13.04662,
+        "lon": 77.68598,
+        "population_estimate": null,
+        "priority": "low"
+      },
+      {
+        "name": "Bengaluru Catchment Zone 2",
+        "lat": 12.94952,
+        "lon": 77.73586,
+        "population_estimate": null,
+        "priority": "low"
+      },
+      {
+        "name": "Bengaluru Catchment Zone 3",
+        "lat": 12.95864,
+        "lon": 77.72526,
+        "population_estimate": null,
+        "priority": "low"
+      },
+      {
+        "name": "Bengaluru Catchment Zone 4",
+        "lat": 12.984,
+        "lon": 77.6185,
+        "population_estimate": null,
+        "priority": "low"
+      },
+      {
+        "name": "Bengaluru Catchment Zone 5",
+        "lat": 12.93975,
+        "lon": 77.66547,
+        "population_estimate": null,
+        "priority": "low"
+      }
+    ],
+    "critical_infrastructure_affected": [
+      {
+        "type": "bridge",
+        "name": "20th Cross Road",
+        "lat": 12.9605,
+        "lon": 77.72422
+      },
+      {
+        "type": "bridge",
+        "name": "Annaswamy Mudaliar Road",
+        "lat": 12.98166,
+        "lon": 77.61562
+      },
+      {
+        "type": "bridge",
+        "name": "Doddanekundi Lake Walk",
+        "lat": 12.97651,
+        "lon": 77.6842
+      }
+    ]
+  },
+  "change": {
+    "site_name": "Yelahanka–Hebbal Peri-Urban Corridor",
+    "dates": {
+      "before": "2026-01-22",
+      "after": "2026-11-23"
+    },
+    "changed_area_ha": 46.13,
+    "vegetation_loss_ha": 110.84,
+    "bare_soil_increase_ha": 176.59,
+    "polygons": [
+      {
+        "id": "CHG-001",
+        "area_ha": 1.09,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-002",
+        "area_ha": 1.49,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-003",
+        "area_ha": 1.86,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-004",
+        "area_ha": 0.6,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-005",
+        "area_ha": 1.29,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-006",
+        "area_ha": 1.57,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-007",
+        "area_ha": 0.75,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-008",
+        "area_ha": 0.52,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-009",
+        "area_ha": 0.85,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-010",
+        "area_ha": 2.82,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-011",
+        "area_ha": 0.69,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-012",
+        "area_ha": 1.35,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-013",
+        "area_ha": 1.85,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-014",
+        "area_ha": 0.75,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-015",
+        "area_ha": 0.51,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-016",
+        "area_ha": 0.8,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-017",
+        "area_ha": 0.65,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-018",
+        "area_ha": 4.59,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-019",
+        "area_ha": 4.94,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-020",
+        "area_ha": 1.01,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-021",
+        "area_ha": 1.15,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-022",
+        "area_ha": 3.84,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-023",
+        "area_ha": 0.62,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-024",
+        "area_ha": 0.67,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-025",
+        "area_ha": 0.61,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-026",
+        "area_ha": 0.57,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-027",
+        "area_ha": 1.49,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-028",
+        "area_ha": 0.53,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-029",
+        "area_ha": 4.16,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": true,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-030",
+        "area_ha": 0.94,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-031",
+        "area_ha": 0.57,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      },
+      {
+        "id": "CHG-032",
+        "area_ha": 1.0,
+        "ndvi_drop": 0.333,
+        "confidence": 0.86,
+        "near_river": false,
+        "status": "Potential suspicious activity: requires official verification"
+      }
+    ]
+  },
+  "economics": {
+    "loss_per_ha_inr": 65000.0,
+    "assessment_time_manual_days": 14.0,
+    "assessment_time_geoterra_hours": 2.5
+  },
+  "onboard_sim": {
+    "raw_scene_size_mb": 1200.0,
+    "insight_packet_size_kb": 48.0,
+    "downlink_rate_mbps": 12.0
+  }
+}

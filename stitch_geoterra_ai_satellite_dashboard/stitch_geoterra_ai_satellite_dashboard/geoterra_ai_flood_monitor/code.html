@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#5c4300","surface-container-high":"#102f25","outline-variant":"#4f4633","on-tertiary-fixed":"#00210c","primary-fixed-dim":"#f9bd22","inverse-on-surface":"#17362b","on-tertiary-fixed-variant":"#005227","on-secondary":"#0e372a","on-primary":"#402d00","tertiary":"#72ff9e","tertiary-fixed-dim":"#4de082","surface-container":"#04251b","surface-dim":"#001710","outline":"#9c8f79","on-error-container":"#ffdad6","error-container":"#93000a","on-surface":"#c8eada","on-secondary-container":"#95beac","surface-variant":"#1c3a30","surface-bright":"#203f34","surface-container-lowest":"#00120b","tertiary-fixed":"#6dfe9c","primary-container":"#fbbf24","inverse-surface":"#c8eada","primary-fixed":"#ffdf9f","on-tertiary-container":"#00612f","secondary":"#a6d0bd","on-secondary-fixed":"#002117","on-primary-fixed":"#261a00","surface":"#001710","on-background":"#c8eada","surface-tint":"#f9bd22","surface-container-low":"#012017","secondary-container":"#274e40","surface-container-highest":"#1c3a30","secondary-fixed":"#c1ecd9","on-secondary-fixed-variant":"#274e40","on-surface-variant":"#d3c5ac","on-primary-container":"#6c4f00","tertiary-container":"#4fe284","on-error":"#690005","secondary-fixed-dim":"#a6d0bd","primary":"#ffe1a7","inverse-primary":"#795900","background":"#001710","on-tertiary":"#003919","error":"#ffb4ab"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"3rem","space-md":"1.5rem",gutter:"1rem","space-xs":"0.5rem","space-sm":"1rem",margin:"1.5rem","margin-mobile":"0.75rem","gutter-mobile":"0.5rem","space-lg":"2rem"},fontFamily:{"display-lg-mobile":["Inter"],"headline-xl":["Inter"],"mono-data-sm":["JetBrains Mono"],"display-lg":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"mono-metric-lg":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"label-micro":["JetBrains Mono"],"headline-md":["Inter"],"body-sm":["Inter"],"mono-metric-md":["JetBrains Mono"],"headline-lg":["Inter"]},fontSize:{"display-lg-mobile":["28px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-xl":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"600"}],"mono-data-sm":["13px",{lineHeight:"18px",fontWeight:"500"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"mono-metric-lg":["32px",{lineHeight:"36px",letterSpacing:"-0.03em",fontWeight:"700"}],"label-caps":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"600"}],"label-micro":["9px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"500"}],"headline-md":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"mono-metric-md":["20px",{lineHeight:"24px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-[72px] bg-surface-container-low z-50 flex flex-col items-center py-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="mb-space-md group relative flex items-center justify-center"><div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container shadow-[0_0_12px_rgba(251,191,36,0.2)]"><span class="material-symbols-outlined text-[24px]">satellite_alt</span></div><span class="absolute left-16 px-space-xs py-1 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase tracking-wider whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50 shadow-[0_8px_32px_-4px_rgba(7,24,18,0.65)]">GeoTerra AI</span></div><nav class="flex-1 flex flex-col items-center gap-space-xs w-full px-2" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_12px_rgba(251,191,36,0.35)]"><a class="w-12 h-12 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="#" title="Overview"><span class="material-symbols-outlined text-[22px]">dashboard</span></a><a aria-current="page" class="w-12 h-12 rounded-xl flex items-center justify-center transition-colors bg-primary-container text-on-primary-container shadow-[0_0_12px_rgba(251,191,36,0.35)]" data-path="flood-monitor" href="#" title="Flood Monitor"><span class="material-symbols-outlined text-[22px]">water</span></a><a class="w-12 h-12 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="land-change" href="#" title="Land Change"><span class="material-symbols-outlined text-[22px]">landscape</span></a><a class="w-12 h-12 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="impact-value" href="#" title="Impact & Value"><span class="material-symbols-outlined text-[22px]">currency_rupee</span></a><a class="w-12 h-12 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="space-sim" href="#" title="Space Sim"><span class="material-symbols-outlined text-[22px]">orbit</span></a><a class="w-12 h-12 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#" title="Reports"><span class="material-symbols-outlined text-[22px]">description</span></a><a class="w-12 h-12 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="model-data" href="#" title="Model & Data"><span class="material-symbols-outlined text-[22px]">auto_awesome</span></a></nav><div class="flex flex-col items-center gap-space-xs w-full"><button class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Toggle Optics" type="button"><span class="material-symbols-outlined text-[20px]">contrast</span></button><button class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Help & Documentation" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div></aside><div class="pl-[72px]"><header class="fixed top-0 left-[72px] right-0 h-16 bg-surface-container-low/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-md flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="flex flex-col truncate"><span class="font-headline-md text-headline-md text-primary font-semibold tracking-tight truncate">Disaster Authority Observatory</span><span class="font-mono-data-sm text-mono-data-sm text-secondary truncate">Orbital Telemetry & Impact Assessment Node</span></div></div><div class="hidden xl:flex items-center gap-space-xs font-mono-data-sm text-mono-data-sm text-secondary"><span class="material-symbols-outlined text-[16px]">public</span><span>GLOBAL-GRID</span><span class="text-outline">/</span><span class="text-primary">SECTOR-IND-07</span></div><div class="flex items-center gap-space-sm shrink-0"><div class="flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-micro text-label-micro uppercase font-semibold text-tertiary">AI: Live (Sentinel-1/2)</span></div><div class="hidden sm:flex items-center px-2 py-1 rounded-full bg-primary-container text-on-primary-container font-label-micro text-label-micro font-bold uppercase tracking-wider">Sample Data</div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-variant text-on-surface font-mono-data-sm text-mono-data-sm"><span class="material-symbols-outlined text-[14px] text-primary-container">tune</span><span>Demo Mode</span><span class="px-1 rounded bg-surface-container font-bold text-primary">03/12</span></div><button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">fullscreen</span><span class="hidden lg:inline">Pitch View</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="w-full p-space-md lg:p-space-lg max-w-[1720px] mx-auto"><div class="flex flex-col w-full gap-space-sm">
+<!-- 1. SLIM SUMMARY BAR ABOVE MAP -->
+<section class="w-full bg-surface-container/90 backdrop-blur-xl rounded-xl p-space-sm shadow-xl relative overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<!-- 4 Core Metrics Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter flex-1 items-center">
+<!-- Metric 1: Inundated Area (Fuchsia) -->
+<div class="flex flex-col min-w-0 bg-surface-container-low/60 rounded-lg p-2.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#D946EF] animate-ping"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase truncate">Inundated Area</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-mono-metric-md text-mono-metric-md font-bold text-[#D946EF] tracking-tight">42,850.4</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary">ha</span>
+</div>
+<span class="font-label-micro text-label-micro text-error font-medium flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>+18.4% in 12h
+          </span>
+</div>
+<!-- Metric 2: Cropland Affected (Amber) -->
+<div class="flex flex-col min-w-0 bg-surface-container-low/60 rounded-lg p-2.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase truncate">Cropland Affected</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-mono-metric-md text-mono-metric-md font-bold text-primary-container tracking-tight">28,120.0</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary">ha</span>
+</div>
+<span class="font-label-micro text-label-micro text-secondary font-medium mt-0.5 truncate">Paddy / Tea Plateaus</span>
+</div>
+<!-- Metric 3: Built-up Inundated (Coral) -->
+<div class="flex flex-col min-w-0 bg-surface-container-low/60 rounded-lg p-2.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#F43F5E]"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase truncate">Built-up Inundated</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-mono-metric-md text-mono-metric-md font-bold text-[#F43F5E] tracking-tight">3,110.8</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary">ha</span>
+</div>
+<span class="font-label-micro text-label-micro text-error font-semibold mt-0.5 truncate">24,750 Habitations</span>
+</div>
+<!-- Metric 4: Roads Cut Off (Coral badge) -->
+<div class="flex flex-col min-w-0 bg-surface-container-low/60 rounded-lg p-2.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#F43F5E]"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase truncate">Roads Cut Off</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-mono-metric-md text-mono-metric-md font-bold text-[#F43F5E] tracking-tight">184.2</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary">km</span>
+</div>
+<span class="font-label-micro text-label-micro text-[#F43F5E] font-medium flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px]">block</span>4 Critical Corridors
+          </span>
+</div>
+</div>
+<!-- Right Metadata Badge -->
+<div class="flex items-center gap-2 self-start lg:self-center shrink-0 bg-surface-container-high/80 px-3 py-1.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-mono-data-sm text-[11px] text-secondary">Model prediction (unvalidated) • Sentinel-1 SAR 06:00 IST</span>
+</div>
+</div>
+</section>
+<!-- 2. MAIN WORKSPACE: HERO MAP & SECTOR TELEMETRY DRAWER -->
+<div class="relative w-full flex flex-col xl:flex-row gap-space-sm items-stretch">
+<!-- HERO MAP CANVAS CONTAINER -->
+<div class="relative flex-1 min-h-[640px] lg:min-h-[700px] rounded-xl overflow-hidden bg-[#071F17] shadow-2xl flex flex-col justify-between" id="map-viewport">
+<!-- Interactive SVG Geospatial Map Vector Representation -->
+<div class="absolute inset-0 w-full h-full select-none overflow-hidden pointer-events-none">
+<svg class="w-full h-full object-cover" preserveaspectratio="xMidYMid slice" viewbox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Elevation / Forest Topography Shading -->
+<radialgradient cx="60%" cy="40%" id="topo-glow" r="65%">
+<stop offset="0%" stop-color="#144434" stop-opacity="0.8"></stop>
+<stop offset="60%" stop-color="#0B2B21" stop-opacity="0.95"></stop>
+<stop offset="100%" stop-color="#041E16" stop-opacity="1"></stop>
+</radialgradient>
+<!-- Flood Pattern -->
+<pattern height="8" id="flood-hatch" patterntransform="rotate(45 0 0)" patternunits="userSpaceOnUse" width="8">
+<line stroke="#D946EF" stroke-opacity="0.3" stroke-width="1.2" x1="0" x2="0" y1="0" y2="8"></line>
+</pattern>
+<!-- Flood Area Pulse Filter -->
+<filter height="140%" id="fuchsia-glow" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="6"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+</defs>
+<!-- Topographic Base Layers -->
+<rect fill="url(#topo-glow)" height="800" width="1200"></rect>
+<!-- Contour Lines (Emerald Elevation Grid) -->
+<g fill="none" opacity="0.45" stroke="#1C4B3A" stroke-width="0.8">
+<path d="M-50,220 Q280,180 500,260 T1050,200 T1250,280"></path>
+<path d="M-50,340 Q320,310 620,410 T1100,320 T1250,390"></path>
+<path d="M-50,490 Q220,540 680,480 T1150,560 T1250,510"></path>
+<path d="M-50,650 Q400,600 750,680 T1250,640"></path>
+<circle cx="980" cy="240" r="140" stroke-dasharray="3,3"></circle>
+<circle cx="280" cy="540" r="190" stroke-dasharray="3,3"></circle>
+</g>
+<!-- Permanent Water Channels (Calm Orchid #9D5CB5) -->
+<g id="layer-perm-water">
+<!-- Brahmaputra Main Stem & Nagaon Tributary Loop -->
+<path d="M-20,110 C240,140 380,90 620,130 C840,165 980,115 1220,145" fill="none" opacity="0.85" stroke="#9D5CB5" stroke-linecap="round" stroke-linejoin="round" stroke-width="26"></path>
+<!-- Tributary 1: Kolong River -->
+<path d="M410,125 C390,260 480,340 430,470 C390,570 320,640 260,780" fill="none" opacity="0.75" stroke="#9D5CB5" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></path>
+<!-- Tributary 2: Kopili River -->
+<path d="M850,140 C810,240 760,380 820,520 C870,630 920,740 960,820" fill="none" opacity="0.7" stroke="#9D5CB5" stroke-linecap="round" stroke-width="10"></path>
+</g>
+<!-- Critical Road Networks (Coral) -->
+<g fill="none" id="layer-roads" opacity="0.75" stroke="#F43F5E" stroke-width="2.5">
+<!-- NH-715 Corridor -->
+<path d="M100,210 L380,245 L720,290 L1150,260" stroke-dasharray="7,4"></path>
+<!-- State Highway 3 -->
+<path d="M430,250 L460,450 L520,720"></path>
+<!-- Raha Transport Line -->
+<path d="M260,780 L520,620 L820,520" stroke-dasharray="4,4"></path>
+</g>
+<!-- Inundated Flood Polygons (Vibrant Fuchsia #D946EF) with Hatching & Pulse -->
+<g filter="url(#fuchsia-glow)" id="layer-flood">
+<!-- Major Nagaon Basin Flood Extent -->
+<path d="M310,130 C450,110 520,210 580,240 C660,280 780,260 840,340 C890,410 820,510 740,530 C620,560 520,490 440,510 C360,530 310,440 280,360 C250,290 230,190 310,130 Z" fill="#D946EF" fill-opacity="0.32" stroke="#D946EF" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M310,130 C450,110 520,210 580,240 C660,280 780,260 840,340 C890,410 820,510 740,530 C620,560 520,490 440,510 C360,530 310,440 280,360 C250,290 230,190 310,130 Z" fill="url(#flood-hatch)"></path>
+<!-- Secondary Submerged Sector (Kaliabor Riparian Overspill) -->
+<path d="M680,160 C790,140 890,190 920,280 C950,360 890,420 810,430 C740,440 700,380 670,320 C640,260 620,180 680,160 Z" fill="#D946EF" fill-opacity="0.38" stroke="#D946EF" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M680,160 C790,140 890,190 920,280 C950,360 890,420 810,430 C740,440 700,380 670,320 C640,260 620,180 680,160 Z" fill="url(#flood-hatch)"></path>
+<!-- Pocket Flood: Raha-Chaparmukh Rail Junction -->
+<ellipse cx="440" cy="560" fill="#D946EF" fill-opacity="0.4" rx="90" ry="60" stroke="#D946EF" stroke-width="2"></ellipse>
+</g>
+<!-- Breached Critical Road Segments (Coral Warning Markers) -->
+<g id="layer-breaches">
+<line stroke="#F43F5E" stroke-linecap="round" stroke-width="6" x1="490" x2="570" y1="262" y2="272"></line>
+<circle class="animate-ping" cx="530" cy="267" fill="#F43F5E" fill-opacity="0.3" r="10"></circle>
+<circle cx="530" cy="267" fill="#F43F5E" r="4"></circle>
+<line stroke="#F43F5E" stroke-linecap="round" stroke-width="6" x1="440" x2="455" y1="360" y2="420"></line>
+<circle class="animate-ping" cx="448" cy="390" fill="#F43F5E" fill-opacity="0.3" r="10"></circle>
+<circle cx="448" cy="390" fill="#F43F5E" r="4"></circle>
+</g>
+<!-- High-Risk Settlement Targets (Mint & Coral Pins) -->
+<g id="layer-villages">
+<!-- Kaliabor -->
+<g transform="translate(810, 260)">
+<rect fill="#F43F5E" height="12" transform="rotate(45)" width="12" x="-6" y="-6"></rect>
+<text fill="#F5F1E6" font-family="JetBrains Mono" font-size="11" font-weight="700" x="14" y="4">Kaliabor (HIGH)</text>
+<text fill="#F43F5E" font-family="JetBrains Mono" font-size="9" x="14" y="16">8,420 Submerged</text>
+</g>
+<!-- Samaguri -->
+<g transform="translate(640, 310)">
+<rect fill="#F43F5E" height="10" transform="rotate(45)" width="10" x="-5" y="-5"></rect>
+<text fill="#F5F1E6" font-family="JetBrains Mono" font-size="11" font-weight="700" x="12" y="3">Samaguri</text>
+<text fill="#F43F5E" font-family="JetBrains Mono" font-size="9" x="12" y="15">6,190 Trapped</text>
+</g>
+<!-- Dhing -->
+<g transform="translate(360, 310)">
+<circle cx="0" cy="0" fill="#FBBF24" r="5"></circle>
+<text fill="#F5F1E6" font-family="JetBrains Mono" font-size="11" font-weight="600" x="10" y="4">Dhing</text>
+</g>
+<!-- Rupahi -->
+<g transform="translate(480, 210)">
+<circle cx="0" cy="0" fill="#FBBF24" r="5"></circle>
+<text fill="#F5F1E6" font-family="JetBrains Mono" font-size="11" font-weight="600" x="10" y="4">Rupahi</text>
+</g>
+<!-- Raha -->
+<g transform="translate(410, 610)">
+<circle cx="0" cy="0" fill="#72FF9E" r="4.5"></circle>
+<text fill="#F5F1E6" font-family="JetBrains Mono" font-size="11" font-weight="600" x="10" y="4">Raha</text>
+</g>
+</g>
+<!-- Satellite Optical Overlay Grid Lines -->
+<g stroke="#72FF9E" stroke-opacity="0.08" stroke-width="1">
+<line x1="300" x2="300" y1="0" y2="800"></line>
+<line x1="600" x2="600" y1="0" y2="800"></line>
+<line x1="900" x2="900" y1="0" y2="800"></line>
+<line x1="0" x2="1200" y1="200" y2="200"></line>
+<line x1="0" x2="1200" y1="400" y2="400"></line>
+<line x1="0" x2="1200" y1="600" y2="600"></line>
+</g>
+</svg>
+</div>
+<!-- MAP FLOATING TOP CONTROLS -->
+<div class="relative z-10 p-space-sm flex items-start justify-between gap-space-sm pointer-events-none">
+<!-- Left: Collapsible Layer Control Pill -->
+<div class="pointer-events-auto bg-surface-container/90 backdrop-blur-xl rounded-xl p-space-xs shadow-xl max-w-xs transition-all">
+<div class="flex items-center justify-between px-2 py-1 mb-1.5 cursor-pointer" onclick="document.getElementById('layers-tray').classList.toggle('hidden')">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps text-secondary uppercase">
+<span class="material-symbols-outlined text-[16px] text-primary-container">layers</span>
+<span>Map Overlays</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary">expand_more</span>
+</div>
+<div class="flex flex-col gap-1.5 px-2 pb-1" id="layers-tray">
+<!-- Layer 1: Flood Extent -->
+<label class="flex items-center justify-between gap-3 text-body-sm cursor-pointer hover:text-on-surface text-secondary py-0.5">
+<span class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-[#D946EF] inline-block shadow-[0_0_8px_rgba(217,70,239,0.5)]"></span>
+<span>Flood Extent</span>
+</span>
+<input checked="" class="accent-[#D946EF] w-4 h-4 rounded cursor-pointer" onchange="toggleSvgLayer('layer-flood', this.checked)" type="checkbox"/>
+</label>
+<!-- Layer 2: Permanent Water -->
+<label class="flex items-center justify-between gap-3 text-body-sm cursor-pointer hover:text-on-surface text-secondary py-0.5">
+<span class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-[#9D5CB5] inline-block"></span>
+<span>Permanent Water</span>
+</span>
+<input checked="" class="accent-[#9D5CB5] w-4 h-4 rounded cursor-pointer" onchange="toggleSvgLayer('layer-perm-water', this.checked)" type="checkbox"/>
+</label>
+<!-- Layer 3: Critical Roads -->
+<label class="flex items-center justify-between gap-3 text-body-sm cursor-pointer hover:text-on-surface text-secondary py-0.5">
+<span class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-[#F43F5E] inline-block"></span>
+<span>Roads & Bridges</span>
+</span>
+<input checked="" class="accent-[#F43F5E] w-4 h-4 rounded cursor-pointer" onchange="toggleSvgLayer('layer-roads', this.checked); toggleSvgLayer('layer-breaches', this.checked);" type="checkbox"/>
+</label>
+<!-- Layer 4: Village Settlements -->
+<label class="flex items-center justify-between gap-3 text-body-sm cursor-pointer hover:text-on-surface text-secondary py-0.5">
+<span class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-tertiary-container inline-block"></span>
+<span>Habitations</span>
+</span>
+<input checked="" class="accent-tertiary-container w-4 h-4 rounded cursor-pointer" onchange="toggleSvgLayer('layer-villages', this.checked)" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Right: 2D/3D Mode & Telemetry Header Pill -->
+<div class="pointer-events-auto flex items-center gap-2">
+<!-- Coordinates & Location Telemetry Pin -->
+<div class="hidden md:flex items-center gap-2 bg-surface-container/90 backdrop-blur-xl px-3 py-1.5 rounded-xl font-mono-data-sm text-[11px] text-secondary shadow-lg">
+<span class="material-symbols-outlined text-[16px] text-tertiary">near_me</span>
+<span class="text-on-surface font-semibold">26.2006° N, 92.9376° E</span>
+<span class="text-secondary/50">|</span>
+<span class="text-primary truncate">Kaziranga • Nagaon Dist.</span>
+</div>
+<!-- Segmented 2D / 3D Switch -->
+<div class="bg-surface-container-high/90 backdrop-blur-xl p-1 rounded-xl flex items-center shadow-lg">
+<button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary-container font-mono-data-sm text-body-sm font-bold shadow transition-all" id="btn-2d" type="button">2D</button>
+<button class="px-3 py-1 rounded-lg text-secondary hover:text-on-surface font-mono-data-sm text-body-sm font-medium transition-all" id="btn-3d" onclick="alert('3D Terrain Mesh: Digital Elevation Model (DEM 12m) rendered.')" type="button">3D</button>
+</div>
+</div>
+</div>
+<!-- MAP FLOATING BOTTOM SECTION (Navigation controls & Split Slider) -->
+<div class="relative z-10 p-space-sm flex flex-col items-center justify-end gap-space-sm pointer-events-none">
+<!-- Center Bottom: Interactive Before/After Split Slider -->
+<div class="pointer-events-auto w-full max-w-xl bg-surface-container/95 backdrop-blur-2xl rounded-xl p-3 shadow-2xl flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-caps text-label-caps uppercase">
+<span class="text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+              Pre-Monsoon (May 2024)
+            </span>
+<span class="text-[#D946EF] font-bold flex items-center gap-1">
+              Post-Flood Peak (July 2024)
+              <span class="w-1.5 h-1.5 rounded-full bg-[#D946EF] animate-ping"></span>
+</span>
+</div>
+<!-- Slider Track -->
+<div class="relative flex items-center">
+<input class="w-full h-2 rounded-full appearance-none bg-surface-container-highest accent-primary-container cursor-ew-resize" id="flood-slider" max="100" min="0" type="range" value="82"/>
+</div>
+<div class="flex items-center justify-between text-body-sm text-secondary font-mono-data-sm text-[11px]">
+<span>Baseline: Dry Riverbed</span>
+<span class="text-primary font-bold">Peak Coherence Delta: +328% SAR Signal</span>
+</div>
+</div>
+<!-- Floating Map Nav Tool (Zoom, Pan, Reset) -->
+<div class="pointer-events-auto self-end flex items-center gap-1.5 bg-surface-container/90 backdrop-blur-xl p-1.5 rounded-xl shadow-lg -mt-10">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface flex items-center justify-center transition-colors" title="Zoom In" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface flex items-center justify-center transition-colors" title="Zoom Out" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-variant text-primary flex items-center justify-center transition-colors" title="Recenter Observatory" type="button">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 3. RIGHT DRAWER (OPEN BY DEFAULT FOR RAPID RESPONSE) -->
+<aside class="w-full xl:w-[420px] shrink-0 bg-surface-container/95 backdrop-blur-2xl rounded-xl flex flex-col shadow-2xl overflow-hidden transition-all duration-300" id="tactical-drawer">
+<!-- Drawer Header -->
+<div class="p-space-sm bg-surface-container-high/70 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-[#D946EF]"></span>
+<div class="flex flex-col truncate">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight truncate">Nagaon & Morigaon</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase truncate">Sector Operational Telemetry</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-variant hover:text-on-surface transition-colors" onclick="toggleDrawerCollapse()" title="Minimize Console" type="button">
+<span class="material-symbols-outlined text-[20px]" id="drawer-toggle-icon">chevron_right</span>
+</button>
+</div>
+<!-- Tab Navigation Switcher -->
+<div class="flex items-center bg-surface-container-low px-space-sm pt-2 gap-1">
+<button class="flex-1 py-2 text-center font-mono-data-sm text-body-sm font-semibold rounded-t-lg bg-surface-container text-primary-container shadow transition-colors" id="tab-btn-affected" onclick="switchDrawerTab('affected')" type="button">
+          Affected (5)
+        </button>
+<button class="flex-1 py-2 text-center font-mono-data-sm text-body-sm font-medium rounded-t-lg text-secondary hover:text-on-surface transition-colors" id="tab-btn-alert" onclick="switchDrawerTab('alert')" type="button">
+          District Alert
+        </button>
+<button class="flex-1 py-2 text-center font-mono-data-sm text-body-sm font-medium rounded-t-lg text-secondary hover:text-on-surface transition-colors" id="tab-btn-accuracy" onclick="switchDrawerTab('accuracy')" type="button">
+          Accuracy
+        </button>
+</div>
+<!-- TAB CONTENTS BODY -->
+<div class="p-space-sm flex-1 flex flex-col gap-space-sm overflow-y-auto max-h-[640px]">
+<!-- ==================== TAB 1: AFFECTED (DEFAULT) ==================== -->
+<div class="flex flex-col gap-space-sm" id="tab-panel-affected">
+<!-- Section 1: Ranked Settlements -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Ranked Habitations (Severity)</span>
+<span class="font-mono-data-sm text-[11px] text-tertiary">24,750 Stranded</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<!-- Item 1: Kaliabor -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-data-sm font-bold text-on-surface">1. Kaliabor</span>
+<span class="px-2 py-0.5 rounded-full bg-[#F43F5E]/20 text-[#F43F5E] font-label-micro text-label-micro font-bold uppercase">High Priority</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary truncate mt-0.5">8,420 population cut off • 92% inundated</span>
+</div>
+<button class="w-7 h-7 rounded flex items-center justify-center text-secondary hover:text-primary hover:bg-surface-variant transition-colors" title="Center on Map" type="button">
+<span class="material-symbols-outlined text-[18px]">gps_fixed</span>
+</button>
+</div>
+<!-- Item 2: Samaguri -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-data-sm font-bold text-on-surface">2. Samaguri</span>
+<span class="px-2 py-0.5 rounded-full bg-[#F43F5E]/20 text-[#F43F5E] font-label-micro text-label-micro font-bold uppercase">High Priority</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary truncate mt-0.5">6,190 population cut off • 78% inundated</span>
+</div>
+<button class="w-7 h-7 rounded flex items-center justify-center text-secondary hover:text-primary hover:bg-surface-variant transition-colors" title="Center on Map" type="button">
+<span class="material-symbols-outlined text-[18px]">gps_fixed</span>
+</button>
+</div>
+<!-- Item 3: Dhing -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-data-sm font-bold text-on-surface">3. Dhing</span>
+<span class="px-2 py-0.5 rounded-full bg-[#FB923C]/20 text-[#FB923C] font-label-micro text-label-micro font-bold uppercase">Medium</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary truncate mt-0.5">4,800 cut off • Dykes strained</span>
+</div>
+<button class="w-7 h-7 rounded flex items-center justify-center text-secondary hover:text-primary hover:bg-surface-variant transition-colors" title="Center on Map" type="button">
+<span class="material-symbols-outlined text-[18px]">gps_fixed</span>
+</button>
+</div>
+<!-- Item 4: Rupahi -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-data-sm font-bold text-on-surface">4. Rupahi</span>
+<span class="px-2 py-0.5 rounded-full bg-[#FB923C]/20 text-[#FB923C] font-label-micro text-label-micro font-bold uppercase">Medium</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary truncate mt-0.5">3,450 cut off • Access road inundated</span>
+</div>
+<button class="w-7 h-7 rounded flex items-center justify-center text-secondary hover:text-primary hover:bg-surface-variant transition-colors" title="Center on Map" type="button">
+<span class="material-symbols-outlined text-[18px]">gps_fixed</span>
+</button>
+</div>
+<!-- Item 5: Raha -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-data-sm font-bold text-on-surface">5. Raha</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-micro text-label-micro font-bold uppercase">Low</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary truncate mt-0.5">1,890 cut off • Evacuation staging hub active</span>
+</div>
+<button class="w-7 h-7 rounded flex items-center justify-center text-secondary hover:text-primary hover:bg-surface-variant transition-colors" title="Center on Map" type="button">
+<span class="material-symbols-outlined text-[18px]">gps_fixed</span>
+</button>
+</div>
+</div>
+<!-- Expand Button -->
+<button class="w-full text-center py-1.5 text-body-sm font-mono-data-sm text-primary hover:underline transition-all" onclick="this.innerText = 'All 24 Sectors Displayed on Tactical Plot'" type="button">
+              Show all (24 affected sectors) ↓
+            </button>
+</div>
+<!-- Section 2: Submerged Transport Routes -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Top Cut-Off Lifelines</span>
+<div class="flex flex-col gap-2">
+<!-- Route 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#F43F5E] text-[20px] shrink-0 mt-0.5">report</span>
+<div class="flex flex-col min-w-0">
+<span class="font-mono-data-sm font-bold text-on-surface">NH-715 (Submerged km 42–49)</span>
+<span class="font-body-sm text-secondary">Bokakhat to Jakhalabandha axis severed. Depth > 1.4m.</span>
+</div>
+</div>
+<!-- Route 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#FB923C] text-[20px] shrink-0 mt-0.5">wrong_location</span>
+<div class="flex flex-col min-w-0">
+<span class="font-mono-data-sm font-bold text-on-surface">State Highway 3 (Samaguri Bypass)</span>
+<span class="font-body-sm text-secondary">Culvert wash-away at bridge pillar #4. Heavy vehicle halt.</span>
+</div>
+</div>
+<!-- Route 3 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#F43F5E] text-[20px] shrink-0 mt-0.5">directions_railway</span>
+<div class="flex flex-col min-w-0">
+<span class="font-mono-data-sm font-bold text-on-surface">Raha–Chaparmukh Rail Line</span>
+<span class="font-body-sm text-secondary">Ballast scouring over 620m. NF Railway trains suspended.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== TAB 2: ALERT ==================== -->
+<div class="hidden flex-col gap-space-sm" id="tab-panel-alert">
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary uppercase">Automated Civil Alert Dispatch</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-micro text-label-micro font-bold">READY</span>
+</div>
+<p class="text-body-sm text-secondary">
+              Multi-channel cell broadcast synthesizer synced with state SDMA towers and FM relay stations.
+            </p>
+</div>
+<!-- Live Broadcast Preview Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-high/90 flex flex-col gap-3 shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-mono-data-sm text-body-sm font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">cell_tower</span>
+                CAP Alert Payload (Bilingual)
+              </span>
+<span class="font-mono-data-sm text-[10px] text-secondary">TARGET: SECTOR-07</span>
+</div>
+<!-- English Stream -->
+<div class="bg-surface-container-lowest p-3 rounded-lg">
+<span class="font-label-micro text-label-micro text-secondary uppercase font-bold">English (Cell Broadcast)</span>
+<p class="font-mono-data-sm text-[12px] text-[#F5F1E6] mt-1 leading-relaxed">
+                "CRITICAL: Flood levels rising at Kaliabor sector. Kolong River breached 1.8m above danger mark. Evacuate to Sector 4 Relief Camp immediately. Emergency Ops: 1077."
+              </p>
+</div>
+<!-- Assamese Stream -->
+<div class="bg-surface-container-lowest p-3 rounded-lg">
+<span class="font-label-micro text-label-micro text-secondary uppercase font-bold">Assamese (&Rmbk&Cmbk&Qmbk&Gmbk&Ambk&Hmbk)</span>
+<p class="font-body-sm text-[12px] text-secondary mt-1 leading-relaxed">
+                "À&Ombk&Hmbk&Pmbk&Gmbk&Qmbk&Ambk&Lmbk&Ambk&Imbk&Mmbk: &Kmbk&Mmbk&Jmbk&Ombk&Jmbk&Pmbk&Ambk&Smbk&Ambk&Hmbk&Qmbk&Pmbk &Hmbk&Ambk&Nmbk&Qmbk&Kmbk&Mmbk&Smbk &Jmbk&Ambk&Jmbk&Kmbk&Ambk&ImbkΙ &Pmbk&Ambk&Nmbk&Qmbk&Pmbk &Smbk&Ambk&Pmbk&Ombk&Kmbk&Smbk&Ambk&Pmbk&Ambk&Kmbk&Imbk&Ambk&Hmbk &Smbk&Qmbk&Pmbk&Gmbk&Mmbk&Ambk&Imbk&Mmbk&Qmbk&Smbk 4 &Smbk&Ambk&Hmbk&Ambk&Pmbk&Pmbk&Qmbk&Kmbk &Siv&Ambk&Ombk&Pmbk&Nmbk&Ambk&Smbk&Mmbk&Ambk&Qmbk &Ambk&Ambk&Hmbk&Smbk&Mmbk&Pmbk &Kmbk&Ombk&Kmbk&Smbk&Mmbk..."
+              </p>
+</div>
+</div>
+<!-- EXACTLY ONE GOLD PRIMARY BUTTON -->
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary-container text-on-primary-container font-mono-data-sm text-body-md font-bold tracking-tight shadow-xl hover:bg-surface-tint active:scale-[0.99] transition-all flex items-center justify-center gap-2" id="btn-dispatch-alert" onclick="triggerAlertAnimation()" type="button">
+<span class="material-symbols-outlined text-[20px]">emergency_share</span>
+<span>GENERATE AI DISTRICT ALERT</span>
+</button>
+<span class="text-center font-label-micro text-label-micro text-secondary">
+            Requires dual cryptographic key authorization (NDRF / DM Nagaon)
+          </span>
+</div>
+<!-- ==================== TAB 3: ACCURACY ==================== -->
+<div class="hidden flex-col gap-space-sm" id="tab-panel-accuracy">
+<!-- U-Net IoU Performance Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Neural Architecture Telemetry</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded-lg bg-surface-container-high flex flex-col">
+<span class="font-label-micro text-label-micro text-secondary uppercase">U-Net SAR IoU</span>
+<span class="font-mono-metric-md text-mono-metric-md text-tertiary font-bold mt-1">89.4%</span>
+<span class="font-label-micro text-label-micro text-tertiary mt-0.5">High Convergence</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high flex flex-col">
+<span class="font-label-micro text-label-micro text-secondary uppercase">Baseline NDWI</span>
+<span class="font-mono-metric-md text-mono-metric-md text-secondary font-bold mt-1">68.2%</span>
+<span class="font-label-micro text-label-micro text-primary-container font-bold mt-0.5">+21.2% GeoTerra Gain</span>
+</div>
+</div>
+<!-- Mini Accuracy Bar Comparison -->
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="flex justify-between font-mono-data-sm text-[11px] text-secondary">
+<span>False Inundation Suppression</span>
+<span class="text-on-surface font-bold">94.1%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 94.1%"></div>
+</div>
+</div>
+</div>
+<!-- Compact Confusion Matrix Summary -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Confusion Matrix Validation</span>
+<span class="font-mono-data-sm text-[10px] text-secondary">N = 124,000 PIXELS</span>
+</div>
+<!-- 2x2 Grid Representation -->
+<div class="grid grid-cols-2 gap-2 text-center font-mono-data-sm text-body-sm mt-1">
+<div class="p-2 rounded bg-surface-container-high flex flex-col items-center">
+<span class="font-label-micro text-label-micro text-secondary">TRUE POSITIVE</span>
+<span class="text-tertiary font-bold text-headline-md mt-0.5">91.2%</span>
+<span class="font-label-micro text-label-micro text-secondary">Water confirmed</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high flex flex-col items-center">
+<span class="font-label-micro text-label-micro text-secondary">FALSE POSITIVE</span>
+<span class="text-primary-container font-bold text-headline-md mt-0.5">3.8%</span>
+<span class="font-label-micro text-label-micro text-secondary">Specular soil error</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high flex flex-col items-center">
+<span class="font-label-micro text-label-micro text-secondary">FALSE NEGATIVE</span>
+<span class="text-[#F43F5E] font-bold text-headline-md mt-0.5">5.0%</span>
+<span class="font-label-micro text-label-micro text-secondary">Dense canopy mask</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high flex flex-col items-center">
+<span class="font-label-micro text-label-micro text-secondary">TRUE NEGATIVE</span>
+<span class="text-on-surface font-bold text-headline-md mt-0.5">97.6%</span>
+<span class="font-label-micro text-label-micro text-secondary">Dry land identified</span>
+</div>
+</div>
+</div>
+<!-- Radar Sensor Reference -->
+<div class="p-2.5 rounded-lg bg-surface-container-high/60 flex items-center justify-between font-mono-data-sm text-[11px] text-secondary">
+<span>Pass: Sentinel-1B C-SAR VV/VH</span>
+<span class="text-tertiary">Incident Angle 38.6°</span>
+</div>
+</div>
+</div>
+<!-- Live Notification Banner Footer in Drawer -->
+<div class="p-2.5 bg-surface-container-lowest flex items-center justify-between border-t border-surface-container-highest/20 font-mono-data-sm text-[11px]">
+<div class="flex items-center gap-1.5 text-secondary truncate">
+<span class="material-symbols-outlined text-[15px] text-primary">satellite</span>
+<span class="truncate">Next SAR pass in <strong class="text-on-surface">04h 12m</strong></span>
+</div>
+<span class="text-tertiary font-bold shrink-0">STATION LOCK</span>
+</div>
+</aside>
+</div>
+<!-- Client-side Interactive Behavior -->
+<script>
+    // Tab Switcher for Sector Telemetry Drawer
+    function switchDrawerTab(tabName) {
+      const tabs = ['affected', 'alert', 'accuracy'];
+      tabs.forEach(t => {
+        const btn = document.getElementById('tab-btn-' + t);
+        const panel = document.getElementById('tab-panel-' + t);
+        if (t === tabName) {
+          btn.className = 'flex-1 py-2 text-center font-mono-data-sm text-body-sm font-semibold rounded-t-lg bg-surface-container text-primary-container shadow transition-colors';
+          panel.classList.remove('hidden');
+          panel.classList.add('flex');
+        } else {
+          btn.className = 'flex-1 py-2 text-center font-mono-data-sm text-body-sm font-medium rounded-t-lg text-secondary hover:text-on-surface transition-colors';
+          panel.classList.add('hidden');
+          panel.classList.remove('flex');
+        }
+      });
+    }
+
+    // Toggle Map SVG Overlay Layers
+    function toggleSvgLayer(layerId, isVisible) {
+      const el = document.getElementById(layerId);
+      if (el) {
+        el.style.display = isVisible ? 'inline' : 'none';
+      }
+    }
+
+    // Interactive Split Slider Logic (Before / After SAR Flood Extent Opacity)
+    const floodSlider = document.getElementById('flood-slider');
+    if (floodSlider) {
+      floodSlider.addEventListener('input', function(e) {
+        const val = e.target.value;
+        const floodGroup = document.getElementById('layer-flood');
+        const breachesGroup = document.getElementById('layer-breaches');
+        if (floodGroup) {
+          floodGroup.style.opacity = (val / 100).toString();
+        }
+        if (breachesGroup) {
+          breachesGroup.style.opacity = (val / 100).toString();
+        }
+      });
+    }
+
+    // Drawer collapse / expand micro-interaction
+    function toggleDrawerCollapse() {
+      const drawer = document.getElementById('tactical-drawer');
+      const icon = document.getElementById('drawer-toggle-icon');
+      if (drawer.classList.contains('xl:w-[420px]')) {
+        drawer.classList.remove('xl:w-[420px]');
+        drawer.classList.add('xl:w-16');
+        icon.innerText = 'chevron_left';
+      } else {
+        drawer.classList.remove('xl:w-16');
+        drawer.classList.add('xl:w-[420px]');
+        icon.innerText = 'chevron_right';
+      }
+    }
+
+    // Generate Alert Button Action Feedback
+    function triggerAlertAnimation() {
+      const btn = document.getElementById('btn-dispatch-alert');
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>DISPATCHING STATE BROADCAST...</span>';
+      btn.classList.add('opacity-75');
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>ALERT TRANSMITTED TO 85 TDF TOWERS</span>';
+        btn.classList.remove('opacity-75');
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+        }, 3200);
+      }, 1000);
+    }
+  </script>
+</div></div></main><aside class="fixed right-0 top-16 bottom-7 w-96 bg-surface-container/95 backdrop-blur-xl z-30 translate-x-full transition-transform duration-300 ease-in-out shadow-[0_8px_32px_-4px_rgba(7,24,18,0.65)] flex flex-col" id="context-drawer"><div class="h-12 px-space-sm flex items-center justify-between bg-surface-container-high/60"><div class="flex items-center gap-space-xs font-label-caps text-label-caps text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-[16px]">sensors</span><span>Sensor Telemetry</span></div><button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button></div><div class="flex-1 p-space-md overflow-y-auto"><div class="rounded-xl bg-surface-container-low p-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase">Active Feed Status</span><div class="mt-space-xs font-mono-data-sm text-mono-data-sm text-on-surface">SAR Coherence Interferogram Ready</div></div></div></aside><footer class="fixed bottom-0 left-[72px] right-0 h-7 bg-surface-container-lowest/95 backdrop-blur-md z-40 flex items-center justify-between px-space-md text-on-surface-variant font-label-micro text-label-micro shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="truncate"><span class="text-primary font-bold">Responsible Use:</span> AI-assisted satellite telemetry for emergency decision support. All predictions require local ground verification. | <a class="underline text-on-surface hover:text-primary transition-colors" href="#">Learn more</a></div><div class="shrink-0 font-mono-data-sm text-[10px] text-secondary pl-space-sm">UTC+05:30 IST • LATENCY 142MS</div></footer></div></body></html>

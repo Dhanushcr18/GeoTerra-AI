@@ -1,0 +1,844 @@
+{
+  "generated_at": "2026-11-26T00:22:00.024716+00:00",
+  "source": "Fused Copernicus DEM + Sentinel-1 SAR + Sentinel-2 L2A + Landsat 8/9 + Bengaluru Lifelines",
+  "honesty_notice": "Satellite detections, flood-exposure overlaps, and land-disturbance alerts are AI & remote-sensing risk screens for preventive safety inspection \u2014 NOT verified field structural incidents.",
+  "summary": {
+    "total_assets_monitored": 14,
+    "high_risk_count": 1,
+    "flood_exposed_count": 5,
+    "land_disturbance_count": 13,
+    "thermal_exposed_count": 1,
+    "inspection_queue_count": 4,
+    "total_exposed_roads_km": 10.5,
+    "total_exposed_buildings": 6,
+    "active_alerts_count": 14
+  },
+  "assets": [
+    {
+      "id": "orr_ecospace_corridor",
+      "name": "Outer Ring Rd \u2013 Bellandur Ecospace Flyover",
+      "category": "roads_bridges",
+      "category_label": "Roads & Bridges",
+      "lat": 12.9278,
+      "lon": 77.6762,
+      "operator": "BBMP / BDA",
+      "criticality": "Tier-1 IT & Arterial Spine",
+      "elevation_m": 872.3,
+      "depression_m": 7.0,
+      "nearest_lake": "Bellandur Lake",
+      "distance_to_lake_km": 0.39,
+      "flood_susceptibility": 67.7,
+      "sentinel1_water_nearby": true,
+      "flood_exposed": true,
+      "nearby_roads_km": 3.68,
+      "nearby_buildings_exposed": 2,
+      "unusual_land_change_ha": 60.3,
+      "nearby_veg_loss_ha": 21.14,
+      "lake_buffer_shift_ha": 11.03,
+      "nearby_heat_hotspot_ha": 0.0,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 74.0,
+      "risk_level": "High",
+      "needs_inspection": true,
+      "threat_tags": [
+        "Flood-Prone Zone Exposure",
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Schedule drainage & structural inspection before heavy monsoon (>50mm/24h); verify nearby earthworks setbacks.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/orr_ecospace_corridor_before.png",
+        "after": "/api/images/infra/orr_ecospace_corridor_after.png",
+        "risk": "/api/images/infra/orr_ecospace_corridor_risk.png"
+      }
+    },
+    {
+      "id": "power_yelahanka_gen",
+      "name": "Yelahanka 220 kV Substation & Gas Plant Corridor",
+      "category": "power",
+      "category_label": "Power Grid",
+      "lat": 13.112,
+      "lon": 77.589,
+      "operator": "KPCL / KPTCL",
+      "criticality": "North Bengaluru Feed",
+      "elevation_m": 892.3,
+      "depression_m": 7.9,
+      "nearest_lake": "Yelahanka Lake",
+      "distance_to_lake_km": 1.91,
+      "flood_susceptibility": 40.9,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 30.04,
+      "nearby_veg_loss_ha": 0.0,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 1.8,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 51.9,
+      "risk_level": "Medium",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/power_yelahanka_gen_before.png",
+        "after": "/api/images/infra/power_yelahanka_gen_after.png",
+        "risk": "/api/images/infra/power_yelahanka_gen_risk.png"
+      }
+    },
+    {
+      "id": "metro_whitefield",
+      "name": "Namma Metro Kadugodi \u2013 Whitefield Depot",
+      "category": "metro",
+      "category_label": "Metro Rail",
+      "lat": 12.9854,
+      "lon": 77.747,
+      "operator": "BMRCL Purple Line",
+      "criticality": "East Metro Terminal & Depot",
+      "elevation_m": 880.1,
+      "depression_m": 6.0,
+      "nearest_lake": "Varthur Lake",
+      "distance_to_lake_km": 3.47,
+      "flood_susceptibility": 35.9,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 31.74,
+      "nearby_veg_loss_ha": 27.34,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 3.99,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": true,
+      "risk_score": 51.8,
+      "risk_level": "Medium",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change",
+        "Thermal / Urban Heat Stress"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/metro_whitefield_before.png",
+        "after": "/api/images/infra/metro_whitefield_after.png",
+        "risk": "/api/images/infra/metro_whitefield_risk.png"
+      }
+    },
+    {
+      "id": "silk_board_interchange",
+      "name": "Central Silk Board Flyover & Metro Hub",
+      "category": "roads_bridges",
+      "category_label": "Roads & Bridges",
+      "lat": 12.9177,
+      "lon": 77.6238,
+      "operator": "BMRCL / NHAI",
+      "criticality": "Multi-Corridor Junction",
+      "elevation_m": 890.2,
+      "depression_m": -2.0,
+      "nearest_lake": "Agara Lake",
+      "distance_to_lake_km": 0.83,
+      "flood_susceptibility": 32.8,
+      "sentinel1_water_nearby": true,
+      "flood_exposed": true,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 22.49,
+      "nearby_veg_loss_ha": 4.43,
+      "lake_buffer_shift_ha": 0.7,
+      "nearby_heat_hotspot_ha": 1.17,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 48.0,
+      "risk_level": "Medium",
+      "needs_inspection": true,
+      "threat_tags": [
+        "Flood-Prone Zone Exposure",
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Schedule drainage & structural inspection before heavy monsoon (>50mm/24h); verify nearby earthworks setbacks.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/silk_board_interchange_before.png",
+        "after": "/api/images/infra/silk_board_interchange_after.png",
+        "risk": "/api/images/infra/silk_board_interchange_risk.png"
+      }
+    },
+    {
+      "id": "hebbal_flyover",
+      "name": "Hebbal Flyover & NH-44 Airport Viaduct",
+      "category": "roads_bridges",
+      "category_label": "Roads & Bridges",
+      "lat": 13.0359,
+      "lon": 77.5919,
+      "operator": "NHAI / BDA",
+      "criticality": "Primary Airport Link",
+      "elevation_m": 895.1,
+      "depression_m": 10.3,
+      "nearest_lake": "Hebbal Lake",
+      "distance_to_lake_km": 0.14,
+      "flood_susceptibility": 63.6,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": true,
+      "nearby_roads_km": 1.08,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 10.32,
+      "nearby_veg_loss_ha": 0.0,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 0.0,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 47.7,
+      "risk_level": "Medium",
+      "needs_inspection": true,
+      "threat_tags": [
+        "Flood-Prone Zone Exposure",
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Schedule drainage & structural inspection before heavy monsoon (>50mm/24h); verify nearby earthworks setbacks.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/hebbal_flyover_before.png",
+        "after": "/api/images/infra/hebbal_flyover_after.png",
+        "risk": "/api/images/infra/hebbal_flyover_risk.png"
+      }
+    },
+    {
+      "id": "water_kengeri_stp",
+      "name": "Vrishabhavathi Valley Water & STP Complex",
+      "category": "water",
+      "category_label": "Water & Drainage",
+      "lat": 12.9125,
+      "lon": 77.4985,
+      "operator": "BWSSB",
+      "criticality": "South-West Trunk Drain",
+      "elevation_m": 797.0,
+      "depression_m": 7.6,
+      "nearest_lake": "Puttenahalli Lake",
+      "distance_to_lake_km": 10.15,
+      "flood_susceptibility": 52.9,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 15.86,
+      "nearby_veg_loss_ha": 4.42,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 0.81,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 46.6,
+      "risk_level": "Medium",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/water_kengeri_stp_before.png",
+        "after": "/api/images/infra/water_kengeri_stp_after.png",
+        "risk": "/api/images/infra/water_kengeri_stp_risk.png"
+      }
+    },
+    {
+      "id": "metro_majestic",
+      "name": "Kempegowda (Majestic) Underground Interchange",
+      "category": "metro",
+      "category_label": "Metro Rail",
+      "lat": 12.9756,
+      "lon": 77.5728,
+      "operator": "BMRCL Purple/Green",
+      "criticality": "Central Transit Hub",
+      "elevation_m": 889.9,
+      "depression_m": 9.3,
+      "nearest_lake": "Sankey Tank",
+      "distance_to_lake_km": 2.93,
+      "flood_susceptibility": 38.2,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 23.36,
+      "nearby_veg_loss_ha": 0.0,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 1.44,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 44.4,
+      "risk_level": "Medium",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/metro_majestic_before.png",
+        "after": "/api/images/infra/metro_majestic_after.png",
+        "risk": "/api/images/infra/metro_majestic_risk.png"
+      }
+    },
+    {
+      "id": "water_bellandur_stp",
+      "name": "Bellandur 90 MLD Sewage & Lake Weir Plant",
+      "category": "water",
+      "category_label": "Water & Drainage",
+      "lat": 12.9362,
+      "lon": 77.6845,
+      "operator": "BWSSB",
+      "criticality": "Valley Wastewater Treatment",
+      "elevation_m": 882.1,
+      "depression_m": -0.6,
+      "nearest_lake": "Bellandur Lake",
+      "distance_to_lake_km": 1.17,
+      "flood_susceptibility": 32.8,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": true,
+      "nearby_roads_km": 5.16,
+      "nearby_buildings_exposed": 4,
+      "unusual_land_change_ha": 87.74,
+      "nearby_veg_loss_ha": 2.41,
+      "lake_buffer_shift_ha": 1.41,
+      "nearby_heat_hotspot_ha": 0.0,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 44.3,
+      "risk_level": "Medium",
+      "needs_inspection": true,
+      "threat_tags": [
+        "Flood-Prone Zone Exposure",
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Schedule drainage & structural inspection before heavy monsoon (>50mm/24h); verify nearby earthworks setbacks.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/water_bellandur_stp_before.png",
+        "after": "/api/images/infra/water_bellandur_stp_after.png",
+        "risk": "/api/images/infra/water_bellandur_stp_risk.png"
+      }
+    },
+    {
+      "id": "nayandahalli_underpass",
+      "name": "Nayandahalli Flyover & Vrishabhavathi Culvert",
+      "category": "roads_bridges",
+      "category_label": "Roads & Bridges",
+      "lat": 12.9422,
+      "lon": 77.5236,
+      "operator": "BBMP / PWD",
+      "criticality": "Valley Drain Crossing",
+      "elevation_m": 817.3,
+      "depression_m": 9.3,
+      "nearest_lake": "Sankey Tank",
+      "distance_to_lake_km": 9.62,
+      "flood_susceptibility": 55.1,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 7.57,
+      "nearby_veg_loss_ha": 0.0,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 0.0,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 40.2,
+      "risk_level": "Low",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/nayandahalli_underpass_before.png",
+        "after": "/api/images/infra/nayandahalli_underpass_after.png",
+        "risk": "/api/images/infra/nayandahalli_underpass_risk.png"
+      }
+    },
+    {
+      "id": "metro_ecity",
+      "name": "Electronic City Elevated Metro Corridor",
+      "category": "metro",
+      "category_label": "Metro Rail",
+      "lat": 12.8452,
+      "lon": 77.6602,
+      "operator": "BMRCL Yellow Line",
+      "criticality": "Hosur Rd Viaduct",
+      "elevation_m": 901.5,
+      "depression_m": 7.9,
+      "nearest_lake": "Madiwala Lake",
+      "distance_to_lake_km": 4.81,
+      "flood_susceptibility": 32.3,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 24.21,
+      "nearby_veg_loss_ha": 12.95,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 0.0,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 39.4,
+      "risk_level": "Low",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/metro_ecity_before.png",
+        "after": "/api/images/infra/metro_ecity_after.png",
+        "risk": "/api/images/infra/metro_ecity_risk.png"
+      }
+    },
+    {
+      "id": "power_hoodi_gis",
+      "name": "Hoodi 220 kV GIS Power Substation",
+      "category": "power",
+      "category_label": "Power Grid",
+      "lat": 12.9908,
+      "lon": 77.7115,
+      "operator": "KPTCL / BESCOM",
+      "criticality": "East Tech Grid Feed",
+      "elevation_m": 877.9,
+      "depression_m": 7.9,
+      "nearest_lake": "Doddanekundi Lake",
+      "distance_to_lake_km": 4.78,
+      "flood_susceptibility": 42.7,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 14.28,
+      "nearby_veg_loss_ha": 0.0,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 0.0,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 37.9,
+      "risk_level": "Low",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/power_hoodi_gis_before.png",
+        "after": "/api/images/infra/power_hoodi_gis_after.png",
+        "risk": "/api/images/infra/power_hoodi_gis_risk.png"
+      }
+    },
+    {
+      "id": "power_peenya_220kv",
+      "name": "Peenya 220 kV Receiving Substation",
+      "category": "power",
+      "category_label": "Power Grid",
+      "lat": 13.0305,
+      "lon": 77.5192,
+      "operator": "KPTCL",
+      "criticality": "West Industrial Grid",
+      "elevation_m": 890.1,
+      "depression_m": 5.5,
+      "nearest_lake": "Sankey Tank",
+      "distance_to_lake_km": 8.41,
+      "flood_susceptibility": 30.2,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 18.0,
+      "nearby_veg_loss_ha": 0.0,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 2.81,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 37.1,
+      "risk_level": "Low",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/power_peenya_220kv_before.png",
+        "after": "/api/images/infra/power_peenya_220kv_after.png",
+        "risk": "/api/images/infra/power_peenya_220kv_risk.png"
+      }
+    },
+    {
+      "id": "water_cjf_south",
+      "name": "BWSSB Cauvery CJF South Ground Reservoir",
+      "category": "water",
+      "category_label": "Water & Drainage",
+      "lat": 12.9102,
+      "lon": 77.6012,
+      "operator": "BWSSB",
+      "criticality": "Drinking Water Distribution",
+      "elevation_m": 899.4,
+      "depression_m": 7.3,
+      "nearest_lake": "Puttenahalli Lake",
+      "distance_to_lake_km": 1.94,
+      "flood_susceptibility": 33.0,
+      "sentinel1_water_nearby": false,
+      "flood_exposed": false,
+      "nearby_roads_km": 0.0,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 17.41,
+      "nearby_veg_loss_ha": 0.0,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 0.0,
+      "land_disturbance_flag": true,
+      "thermal_risk_flag": false,
+      "risk_score": 34.4,
+      "risk_level": "Low",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Unusual Nearby Land Change"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/water_cjf_south_before.png",
+        "after": "/api/images/infra/water_cjf_south_after.png",
+        "risk": "/api/images/infra/water_cjf_south_risk.png"
+      }
+    },
+    {
+      "id": "kr_puram_bridge",
+      "name": "KR Puram Cable-Stayed Bridge & Metro",
+      "category": "roads_bridges",
+      "category_label": "Roads & Bridges",
+      "lat": 13.0012,
+      "lon": 77.6768,
+      "operator": "BMRCL / NHAI",
+      "criticality": "East Rail\u2013Road Bridge",
+      "elevation_m": 898.8,
+      "depression_m": 6.3,
+      "nearest_lake": "Doddanekundi Lake",
+      "distance_to_lake_km": 2.86,
+      "flood_susceptibility": 30.2,
+      "sentinel1_water_nearby": true,
+      "flood_exposed": true,
+      "nearby_roads_km": 0.57,
+      "nearby_buildings_exposed": 0,
+      "unusual_land_change_ha": 5.81,
+      "nearby_veg_loss_ha": 0.0,
+      "lake_buffer_shift_ha": 0.0,
+      "nearby_heat_hotspot_ha": 0.0,
+      "land_disturbance_flag": false,
+      "thermal_risk_flag": false,
+      "risk_score": 31.4,
+      "risk_level": "Low",
+      "needs_inspection": false,
+      "threat_tags": [
+        "Flood-Prone Zone Exposure"
+      ],
+      "recommended_action": "Maintain routine stormwater drain clearance and quarterly Sentinel-2 buffer monitoring.",
+      "status_label": "AI / Satellite Prediction \u2014 requires safety inspection (not a verified incident)",
+      "images": {
+        "before": "/api/images/infra/kr_puram_bridge_before.png",
+        "after": "/api/images/infra/kr_puram_bridge_after.png",
+        "risk": "/api/images/infra/kr_puram_bridge_risk.png"
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALT-ORR_ECOSPA",
+      "asset_id": "orr_ecospace_corridor",
+      "asset_name": "Outer Ring Rd \u2013 Bellandur Ecospace Flyover",
+      "category": "Roads & Bridges",
+      "severity": "HIGH",
+      "alert_type": "MULTI_HAZARD_INFRA_RISK",
+      "title": "Potential Threat Screen: Outer Ring Rd \u2013 Bellandur Ecospace Flyover",
+      "summary": "Flood susceptibility 67.7/100 (Bellandur Lake, 0.39 km), 60.3 ha nearby land change, 0.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-SILK_BOARD",
+      "asset_id": "silk_board_interchange",
+      "asset_name": "Central Silk Board Flyover & Metro Hub",
+      "category": "Roads & Bridges",
+      "severity": "MEDIUM",
+      "alert_type": "MULTI_HAZARD_INFRA_RISK",
+      "title": "Potential Threat Screen: Central Silk Board Flyover & Metro Hub",
+      "summary": "Flood susceptibility 32.8/100 (Agara Lake, 0.83 km), 22.5 ha nearby land change, 1.2 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-HEBBAL_FLY",
+      "asset_id": "hebbal_flyover",
+      "asset_name": "Hebbal Flyover & NH-44 Airport Viaduct",
+      "category": "Roads & Bridges",
+      "severity": "MEDIUM",
+      "alert_type": "MULTI_HAZARD_INFRA_RISK",
+      "title": "Potential Threat Screen: Hebbal Flyover & NH-44 Airport Viaduct",
+      "summary": "Flood susceptibility 63.6/100 (Hebbal Lake, 0.14 km), 10.3 ha nearby land change, 0.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-KR_PURAM_B",
+      "asset_id": "kr_puram_bridge",
+      "asset_name": "KR Puram Cable-Stayed Bridge & Metro",
+      "category": "Roads & Bridges",
+      "severity": "MEDIUM",
+      "alert_type": "FLOOD_ZONE_EXPOSURE",
+      "title": "Potential Threat Screen: KR Puram Cable-Stayed Bridge & Metro",
+      "summary": "Flood susceptibility 30.2/100 (Doddanekundi Lake, 2.86 km), 5.8 ha nearby land change, 0.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-NAYANDAHAL",
+      "asset_id": "nayandahalli_underpass",
+      "asset_name": "Nayandahalli Flyover & Vrishabhavathi Culvert",
+      "category": "Roads & Bridges",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: Nayandahalli Flyover & Vrishabhavathi Culvert",
+      "summary": "Flood susceptibility 55.1/100 (Sankey Tank, 9.62 km), 7.6 ha nearby land change, 0.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-METRO_WHIT",
+      "asset_id": "metro_whitefield",
+      "asset_name": "Namma Metro Kadugodi \u2013 Whitefield Depot",
+      "category": "Metro Rail",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: Namma Metro Kadugodi \u2013 Whitefield Depot",
+      "summary": "Flood susceptibility 35.9/100 (Varthur Lake, 3.47 km), 31.7 ha nearby land change, 4.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-METRO_MAJE",
+      "asset_id": "metro_majestic",
+      "asset_name": "Kempegowda (Majestic) Underground Interchange",
+      "category": "Metro Rail",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: Kempegowda (Majestic) Underground Interchange",
+      "summary": "Flood susceptibility 38.2/100 (Sankey Tank, 2.93 km), 23.4 ha nearby land change, 1.4 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-METRO_ECIT",
+      "asset_id": "metro_ecity",
+      "asset_name": "Electronic City Elevated Metro Corridor",
+      "category": "Metro Rail",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: Electronic City Elevated Metro Corridor",
+      "summary": "Flood susceptibility 32.3/100 (Madiwala Lake, 4.81 km), 24.2 ha nearby land change, 0.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-POWER_HOOD",
+      "asset_id": "power_hoodi_gis",
+      "asset_name": "Hoodi 220 kV GIS Power Substation",
+      "category": "Power Grid",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: Hoodi 220 kV GIS Power Substation",
+      "summary": "Flood susceptibility 42.7/100 (Doddanekundi Lake, 4.78 km), 14.3 ha nearby land change, 0.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-POWER_PEEN",
+      "asset_id": "power_peenya_220kv",
+      "asset_name": "Peenya 220 kV Receiving Substation",
+      "category": "Power Grid",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: Peenya 220 kV Receiving Substation",
+      "summary": "Flood susceptibility 30.2/100 (Sankey Tank, 8.41 km), 18.0 ha nearby land change, 2.8 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-POWER_YELA",
+      "asset_id": "power_yelahanka_gen",
+      "asset_name": "Yelahanka 220 kV Substation & Gas Plant Corridor",
+      "category": "Power Grid",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: Yelahanka 220 kV Substation & Gas Plant Corridor",
+      "summary": "Flood susceptibility 40.9/100 (Yelahanka Lake, 1.91 km), 30.0 ha nearby land change, 1.8 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-WATER_BELL",
+      "asset_id": "water_bellandur_stp",
+      "asset_name": "Bellandur 90 MLD Sewage & Lake Weir Plant",
+      "category": "Water & Drainage",
+      "severity": "MEDIUM",
+      "alert_type": "MULTI_HAZARD_INFRA_RISK",
+      "title": "Potential Threat Screen: Bellandur 90 MLD Sewage & Lake Weir Plant",
+      "summary": "Flood susceptibility 32.8/100 (Bellandur Lake, 1.17 km), 87.7 ha nearby land change, 0.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-WATER_KENG",
+      "asset_id": "water_kengeri_stp",
+      "asset_name": "Vrishabhavathi Valley Water & STP Complex",
+      "category": "Water & Drainage",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: Vrishabhavathi Valley Water & STP Complex",
+      "summary": "Flood susceptibility 52.9/100 (Puttenahalli Lake, 10.15 km), 15.9 ha nearby land change, 0.8 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    },
+    {
+      "id": "ALT-WATER_CJF_",
+      "asset_id": "water_cjf_south",
+      "asset_name": "BWSSB Cauvery CJF South Ground Reservoir",
+      "category": "Water & Drainage",
+      "severity": "MEDIUM",
+      "alert_type": "NEARBY_LAND_DISTURBANCE",
+      "title": "Potential Threat Screen: BWSSB Cauvery CJF South Ground Reservoir",
+      "summary": "Flood susceptibility 33.0/100 (Puttenahalli Lake, 1.94 km), 17.4 ha nearby land change, 0.0 ha heat hotspot.",
+      "verification_label": "AI/Satellite Detection \u2014 Not a verified structural incident"
+    }
+  ],
+  "corridors_geojson": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "corridor_orr_east",
+          "name": "ORR East Flood-Exposed Tech Spine (KR Puram \u2013 Silk Board)",
+          "category": "roads_bridges"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              77.6768,
+              13.0012
+            ],
+            [
+              77.694,
+              12.966
+            ],
+            [
+              77.6762,
+              12.9278
+            ],
+            [
+              77.641,
+              12.917
+            ],
+            [
+              77.6238,
+              12.9177
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "corridor_metro_purple",
+          "name": "Namma Metro Purple Line (Whitefield \u2013 Majestic \u2013 Kengeri)",
+          "category": "metro"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              77.747,
+              12.9854
+            ],
+            [
+              77.705,
+              12.996
+            ],
+            [
+              77.6768,
+              13.0012
+            ],
+            [
+              77.5728,
+              12.9756
+            ],
+            [
+              77.5236,
+              12.9422
+            ],
+            [
+              77.484,
+              12.905
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "corridor_kptcl_220kv",
+          "name": "KPTCL 220 kV North\u2013East Transmission Spine (Yelahanka \u2013 Hoodi)",
+          "category": "power"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              77.589,
+              13.112
+            ],
+            [
+              77.632,
+              13.058
+            ],
+            [
+              77.685,
+              13.025
+            ],
+            [
+              77.7115,
+              12.9908
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "corridor_cauvery_trunk",
+          "name": "BWSSB Water & Valley Trunk Corridor (CJF South \u2013 Bellandur)",
+          "category": "water"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              77.6012,
+              12.9102
+            ],
+            [
+              77.638,
+              12.915
+            ],
+            [
+              77.668,
+              12.931
+            ],
+            [
+              77.6845,
+              12.9362
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

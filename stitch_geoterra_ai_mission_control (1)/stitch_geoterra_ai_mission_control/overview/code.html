@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>GeoTerra AI — Mission Control</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#4f4633","tertiary":"#ffd9fd","surface-container":"#04251b","on-surface":"#c8eada","secondary-container":"#205240","outline":"#9c8f79","on-tertiary":"#580065","on-tertiary-fixed":"#36003e","surface-container-low":"#012017","on-primary-fixed":"#261a00","primary-fixed":"#ffdf9f","surface":"#001710","secondary-fixed":"#b9eed6","error-container":"#93000a","on-secondary-fixed-variant":"#1d4f3e","primary":"#ffe1a7","on-error":"#690005","inverse-surface":"#c8eada","on-secondary-fixed":"#002116","secondary":"#9ed2bb","secondary-fixed-dim":"#9ed2bb","surface-variant":"#1c3a30","surface-bright":"#203f34","on-primary-fixed-variant":"#5c4300","inverse-primary":"#795900","on-error-container":"#ffdad6","on-surface-variant":"#d3c5ac","on-primary":"#402d00","inverse-on-surface":"#17362b","surface-container-lowest":"#00120b","primary-container":"#fbbf24","background":"#001710","on-background":"#c8eada","surface-container-highest":"#1c3a30","surface-dim":"#001710","on-tertiary-fixed-variant":"#7c008e","error":"#ffb4ab","on-tertiary-container":"#9100a6","primary-fixed-dim":"#f9bd22","surface-container-high":"#102f25","on-secondary":"#003828","tertiary-fixed":"#ffd6fd","tertiary-fixed-dim":"#fbabff","surface-tint":"#f9bd22","on-secondary-container":"#90c3ad","on-primary-container":"#6c4f00","tertiary-container":"#fbaeff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1rem","margin":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"headline-lg":["Inter"],"kpi-md-mobile":["JetBrains Mono"],"body-lg":["Inter"],"headline-md":["Inter"],"kpi-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"kpi-lg-mobile":["JetBrains Mono"],"body-md":["Inter"],"label-lg":["JetBrains Mono"],"kpi-md":["JetBrains Mono"],"headline-sm":["Inter"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"kpi-md-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"kpi-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"kpi-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"500"}],"kpi-md":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-16 bg-surface-container-low z-50 flex flex-col items-center py-space-md gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-on-primary-container">satellite_alt</span></div><nav class="flex flex-col items-center gap-space-sm flex-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a aria-current="page" class="w-10 h-10 flex items-center justify-center transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="overview" href="#" title="Overview"><span class="material-symbols-outlined">dashboard</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="flood-monitor" href="#" title="Flood Monitor"><span class="material-symbols-outlined">water_damage</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="land-change" href="#" title="Land Change"><span class="material-symbols-outlined">terrain</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="model-&amp;-data" href="#" title="Model &amp; Data"><span class="material-symbols-outlined">hub</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="impact-&amp;-value" href="#" title="Impact &amp; Value"><span class="material-symbols-outlined">insights</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="space-systems-simulation" href="#" title="Space Systems Simulation"><span class="material-symbols-outlined">orbit</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="alerts-&amp;-reports" href="#" title="Alerts &amp; Reports"><span class="material-symbols-outlined">notifications_active</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="about-&amp;-method" href="#" title="About &amp; Method"><span class="material-symbols-outlined">info</span></a></nav></aside><div class="pl-16"><header class="fixed top-0 left-16 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">GeoTerra AI</span><span class="font-label-sm text-label-sm text-on-surface-variant">Satellites see it. AI measures it. Authorities act on it.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="overview" href="#">Overview</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="flood-monitor" href="#">Flood Monitor</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="land-change" href="#">Land Change</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="model-&amp;-data" href="#">Model &amp; Data</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="impact-&amp;-value" href="#">Impact &amp; Value</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="space-systems-simulation" href="#">Space Systems Simulation</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="alerts-&amp;-reports" href="#">Alerts &amp; Reports</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-&amp;-method" href="#">About &amp; Method</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Demo Mode</button><button class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Daylight</button><span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">AI: cached</span><span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">SAMPLE DATA</span><button class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-bright hover:text-on-surface transition-colors" title="Fullscreen" type="button"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface"><section class="w-full px-space-lg py-space-md bg-surface-container-low"><div class="grid grid-cols-5 gap-gutter"><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Flooded Area</div><div class="font-kpi-md text-kpi-md-mobile text-primary">1,428.5 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cropland Affected</div><div class="font-kpi-md text-kpi-md-mobile text-secondary">842.0 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estimated Loss</div><div class="font-kpi-md text-kpi-md-mobile text-primary">₹18.4 Cr</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Suspicious Land-Change</div><div class="font-kpi-md text-kpi-md-mobile text-tertiary">312.4 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Alerts</div><div class="font-kpi-md text-kpi-md-mobile text-error">7</div></div></div></section><div class="flex w-full"><div class="flex-1 min-w-0 px-space-lg py-space-md"><div class="flex flex-col w-full gap-space-xl">
+<!-- Hero Section: Topographic Contours, Aurora Gradient & Non-Interactive 3D Orbital Globe -->
+<section class="relative w-full rounded-xl bg-surface-container overflow-hidden shadow-xl p-space-xl">
+<!-- Soft Gold / Fuchsia Aurora Gradient -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-surface-container to-tertiary/10 pointer-events-none"></div>
+<div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 right-1/4 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<!-- Faint Topographic Contour Lines (Inline SVG) -->
+<svg class="absolute inset-0 w-full h-full text-secondary/10 pointer-events-none" fill="none" preserveaspectratio="xMidYMid slice" viewbox="0 0 800 400">
+<path d="M-50 80 C 120 20, 260 160, 440 90 C 620 20, 720 140, 860 70" stroke="currentColor" stroke-width="1.2"></path>
+<path d="M-50 130 C 140 70, 280 210, 460 140 C 640 70, 740 190, 860 120" stroke="currentColor" stroke-width="1"></path>
+<path d="M-50 180 C 160 120, 300 260, 480 190 C 660 120, 760 240, 860 170" stroke="currentColor" stroke-width="1"></path>
+<path d="M-50 230 C 180 170, 320 310, 500 240 C 680 170, 780 290, 860 220" stroke="currentColor" stroke-width="1.2"></path>
+<path d="M-50 280 C 200 220, 340 360, 520 290 C 700 220, 800 340, 860 270" stroke="currentColor" stroke-width="1"></path>
+<ellipse cx="620" cy="200" rx="140" ry="90" stroke="currentColor" stroke-dasharray="4 6" stroke-width="0.8"></ellipse>
+</svg>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left Content -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">Orbit-to-Economy • Mission Control</span>
+<span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase">Karnataka AOI</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">
+          Satellites see it. AI measures it. Authorities act on it.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Real-time Sentinel-1 SAR &amp; Sentinel-2 optical fusion for flood extent quantification, cropland loss estimation, and unpermitted land-change detection across high-risk river basins.
+        </p>
+<!-- Two Prominent Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<button class="px-space-lg py-space-sm rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-space-sm shadow-md" type="button">
+<span class="material-symbols-outlined text-[20px]">water_damage</span>
+<span>Open Flood Monitor</span>
+</button>
+<button class="px-space-lg py-space-sm rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-colors flex items-center gap-space-sm shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px] text-tertiary">terrain</span>
+<span>Inspect Land Change</span>
+</button>
+</div>
+</div>
+<!-- Right Half: Decorative, Non-Interactive 3D Globe -->
+<div class="lg:col-span-5 flex items-center justify-center pointer-events-none select-none">
+<div class="relative w-72 h-72 flex items-center justify-center">
+<!-- Gold-Green Atmosphere Rim Glow -->
+<div class="absolute inset-2 rounded-full bg-gradient-to-tr from-primary/25 via-secondary/20 to-tertiary/20 blur-xl"></div>
+<!-- Orbital Ring -->
+<svg class="absolute inset-0 w-full h-full text-primary/30 animate-spin" fill="none" style="animation-duration: 36s;" viewbox="0 0 300 300">
+<ellipse cx="150" cy="150" rx="142" ry="52" stroke="currentColor" stroke-dasharray="6 6" stroke-width="1.2" transform="rotate(-24 150 150)"></ellipse>
+<circle cx="275" cy="96" fill="currentColor" r="4"></circle>
+</svg>
+<!-- 3D Globe Sphere -->
+<svg class="relative w-56 h-56 drop-shadow-xl" fill="none" viewbox="0 0 220 220">
+<defs>
+<radialgradient cx="35%" cy="30%" id="globeOcean" r="70%">
+<stop offset="0%" stop-color="#205240"></stop>
+<stop offset="65%" stop-color="#04251b"></stop>
+<stop offset="100%" stop-color="#00120b"></stop>
+</radialgradient>
+<radialgradient cx="50%" cy="50%" id="globeRim" r="50%">
+<stop offset="82%" stop-color="transparent"></stop>
+<stop offset="96%" stop-color="#fbbf24" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#9ed2bb" stop-opacity="0.5"></stop>
+</radialgradient>
+</defs>
+<!-- Muted Sage-Gray / Deep Ocean Sphere -->
+<circle cx="110" cy="110" fill="url(#globeOcean)" r="96"></circle>
+<!-- Graticule Lines -->
+<ellipse cx="110" cy="110" rx="96" ry="34" stroke="#9ed2bb" stroke-opacity="0.14" stroke-width="0.8"></ellipse>
+<ellipse cx="110" cy="110" rx="48" ry="96" stroke="#9ed2bb" stroke-opacity="0.14" stroke-width="0.8"></ellipse>
+<line stroke="#9ed2bb" stroke-opacity="0.14" stroke-width="0.8" x1="14" x2="206" y1="110" y2="110"></line>
+<!-- Deep Olive-Green Landmasses -->
+<path d="M58 56 C78 44, 106 48, 122 64 C132 74, 126 94, 110 102 C96 108, 76 100, 66 86 C56 72, 48 62, 58 56 Z" fill="#1c3a30"></path>
+<path d="M126 84 C148 76, 174 88, 182 110 C188 128, 172 152, 152 158 C136 162, 128 144, 122 126 C118 110, 114 90, 126 84 Z" fill="#203f34"></path>
+<path d="M46 118 C64 114, 84 126, 88 146 C92 164, 76 178, 58 172 C42 166, 34 142, 46 118 Z" fill="#1c3a30"></path>
+<!-- Karnataka AOI Highlight in Fuchsia / Gold -->
+<circle cx="146" cy="122" fill="#fbaeff" fill-opacity="0.22" r="14"></circle>
+<circle cx="146" cy="122" fill="#fbbf24" fill-opacity="0.45" r="7"></circle>
+<circle cx="146" cy="122" fill="#ffd9fd" r="3.2"></circle>
+<!-- Atmosphere Rim Glow -->
+<circle cx="110" cy="110" fill="url(#globeRim)" r="96"></circle>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 Large KPI Cards (48px JetBrains Mono tabular figures, uppercase sage labels) -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- KPI 1: Flooded Area -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between gap-space-md shadow-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Flooded Area</span>
+<span class="material-symbols-outlined text-primary text-[20px]">water_damage</span>
+</div>
+<div class="font-kpi-md text-kpi-md text-primary tabular-nums">1,428.5 ha</div>
+<div class="flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">+14.2% vs 7d baseline</span>
+<svg class="w-16 h-5 text-primary" fill="none" viewbox="0 0 64 20">
+<polyline points="2,16 14,14 26,15 38,9 50,11 62,3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+</svg>
+</div>
+</div>
+<!-- KPI 2: Cropland Affected -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between gap-space-md shadow-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Cropland Affected</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">agriculture</span>
+</div>
+<div class="font-kpi-md text-kpi-md text-secondary tabular-nums">842.0 ha</div>
+<div class="flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">58.9% of flood extent</span>
+<svg class="w-16 h-5 text-secondary" fill="none" viewbox="0 0 64 20">
+<polyline points="2,15 16,13 28,10 42,11 54,6 62,5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+</svg>
+</div>
+</div>
+<!-- KPI 3: Estimated Loss -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between gap-space-md shadow-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Estimated Loss</span>
+<span class="material-symbols-outlined text-primary text-[20px]">currency_rupee</span>
+</div>
+<div class="font-kpi-md text-kpi-md text-primary tabular-nums">₹18.4 Cr</div>
+<div class="flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Agri + rural road index</span>
+<svg class="w-16 h-5 text-primary" fill="none" viewbox="0 0 64 20">
+<polyline points="2,17 18,15 30,12 44,10 56,7 62,4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+</svg>
+</div>
+</div>
+<!-- KPI 4: Suspicious Land-Change -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between gap-space-md shadow-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Suspicious Land-Change</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">warning</span>
+</div>
+<div class="font-kpi-md text-kpi-md text-tertiary tabular-nums">312.4 ha</div>
+<div class="flex items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">42 flagged polygons</span>
+<svg class="w-16 h-5 text-tertiary" fill="none" viewbox="0 0 64 20">
+<polyline points="2,14 14,16 26,11 38,13 50,6 62,8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+</svg>
+</div>
+</div>
+</section>
+<!-- "Detect -> Measure -> Act" 3-Step Workflow Strip -->
+<section class="bg-surface-container rounded-xl p-space-lg shadow-md">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Operational Pipeline</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Automated 12-min cadence</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Step 1: Detect -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">radar</span>
+</div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary">01</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Detect</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Ingest Sentinel-1 SAR &amp; Sentinel-2 tiles to spot surface water anomalies through cloud cover.
+          </p>
+</div>
+</div>
+<!-- Step 2: Measure -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">straighten</span>
+</div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary">02</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Measure</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Quantify flooded hectares, affected cropland, and economic loss using calibrated AI masks.
+          </p>
+</div>
+</div>
+<!-- Step 3: Act -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">campaign</span>
+</div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-tertiary">03</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Act</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Dispatch priority alerts and export audit-ready PDF evidence packets for district authorities.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Bento: Karnataka AOI Map Preview & Orbital Pass Telemetry -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Map Preview -->
+<div class="lg:col-span-7 bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Active Area of Interest</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Karnataka Basin • Sector 4B</span>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">15.3173° N, 75.7139° E</span>
+</div>
+<div class="w-full h-64 bg-cover bg-center rounded-xl" data-location="Karnataka, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTwvxWRx_kmpHnGi9Ka5tJrFCVBLl_onafXmCV-TDkwzTDxZs3Xks9VTYD-7q6vIRuat8-BAIpfMNVJ-EyfIX9Qt-q3tfQKCUQ9C8FRk7bKzaMFUV1IdGltEoYfdUXg_wGzN-9eynI9McAmPVSuM9G5dK0QV1cwK3w98_FUuqxFIBFVhN-PSb-1ej770h0nvuSaCWCGjljqF1llqY-epnTRFPSozh_mwxiLKvXdyQR')"></div>
+</div>
+<!-- Orbital Pass & Confidence Summary -->
+<div class="lg:col-span-5 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Latest Satellite Pass</span>
+<span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">AI: 94.6% Conf</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">satellite_alt</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Sentinel-1A SAR</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">All-weather flood mask</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">14m ago</span>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">layers</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Sentinel-2 L2A</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NDVI &amp; land-change delta</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">2h ago</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Next Orbital Revisit</span>
+<span class="font-label-lg text-label-lg text-primary tabular-nums">03h 42m 18s</span>
+</div>
+</div>
+</section>
+</div></div><aside class="w-80 shrink-0 bg-surface-container-low p-space-md flex flex-col gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container p-space-xs rounded-lg"><button class="flex-1 py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm" type="button">Alerts</button><button class="flex-1 py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Layers</button><button class="flex-1 py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Details</button></div><div class="flex flex-col gap-space-sm flex-1"><div class="bg-surface-container rounded-xl p-space-sm"><div class="font-label-sm text-label-sm text-error uppercase">Critical • Flood Surge</div><div class="font-body-md text-body-md text-on-surface">Sector 4B embankment breach detected</div></div><div class="bg-surface-container rounded-xl p-space-sm"><div class="font-label-sm text-label-sm text-primary uppercase">Warning • Land Change</div><div class="font-body-md text-body-md text-on-surface">Unpermitted clearing near Basin North</div></div></div><button class="w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors" type="button">Generate Evidence Report (PDF)</button></aside></div></main><footer class="w-full bg-surface-container-low py-space-md px-space-lg text-center"><p class="font-label-sm text-label-sm text-on-surface-variant">Protective use only • Area-level analysis • No tracking of individuals</p></footer></div></body></html>

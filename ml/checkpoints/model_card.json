@@ -1,0 +1,142 @@
+{
+  "model_name": "U-Net (ResNet-34, SMP)",
+  "encoder": "resnet34",
+  "in_channels": [
+    "VV (dB)",
+    "VH (dB)"
+  ],
+  "normalization": {
+    "mean": [
+      -10.455943083245186,
+      -17.197343861820077
+    ],
+    "std": [
+      4.06071445407115,
+      4.316427530014776
+    ]
+  },
+  "dataset": "Sen1Floods11 hand-labeled",
+  "citation": "Bonafilia, D., Tellman, B., Anderson, T., & Issenberg, E. (2020). Sen1Floods11: A Georeferenced Dataset to Train and Test Deep Learning Flood Algorithms for Sentinel-1. IEEE/CVF CVPR Workshops, pp. 210-211.",
+  "trained_at": "2026-11-25T20:11:14.847443+00:00",
+  "split_sizes": {
+    "train": 252,
+    "val": 89,
+    "test": 90,
+    "bolivia": 15
+  },
+  "metrics": {
+    "val": {
+      "loss": 0.27554,
+      "iou": 0.6435,
+      "f1": 0.7831,
+      "precision": 0.7817,
+      "recall": 0.7845,
+      "confusion_matrix": [
+        [
+          17566827,
+          490293
+        ],
+        [
+          482281,
+          1755324
+        ]
+      ]
+    },
+    "test": {
+      "loss": 0.27304,
+      "iou": 0.6627,
+      "f1": 0.7971,
+      "precision": 0.8225,
+      "recall": 0.7733,
+      "confusion_matrix": [
+        [
+          17523010,
+          428256
+        ],
+        [
+          581774,
+          1984327
+        ]
+      ]
+    },
+    "bolivia": {
+      "loss": 0.34053,
+      "iou": 0.5622,
+      "f1": 0.7197,
+      "precision": 0.7771,
+      "recall": 0.6702,
+      "confusion_matrix": [
+        [
+          2325527,
+          87424
+        ],
+        [
+          150015,
+          304849
+        ]
+      ]
+    }
+  },
+  "baseline_metrics": {
+    "method": "Fixed VH backscatter threshold (tuned on validation split only)",
+    "best_vh_threshold_db": -20.0,
+    "val": {
+      "chips": 86,
+      "iou": 0.391,
+      "f1": 0.5622,
+      "precision": 0.4301,
+      "recall": 0.8116,
+      "confusion_matrix": [
+        [
+          15650817,
+          2406303
+        ],
+        [
+          421645,
+          1815960
+        ]
+      ]
+    },
+    "test": {
+      "chips": 89,
+      "iou": 0.445,
+      "f1": 0.6159,
+      "precision": 0.4905,
+      "recall": 0.8275,
+      "confusion_matrix": [
+        [
+          15745361,
+          2205905
+        ],
+        [
+          442712,
+          2123389
+        ]
+      ]
+    },
+    "bolivia": {
+      "chips": 15,
+      "iou": 0.617,
+      "f1": 0.7632,
+      "precision": 0.6836,
+      "recall": 0.8637,
+      "confusion_matrix": [
+        [
+          2231109,
+          181842
+        ],
+        [
+          61992,
+          392872
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "Domain shift: trained on global Sen1Floods11 flood events and applied unvalidated to Bengaluru/Karnataka terrain.",
+    "SAR speckle noise in single-date GRD/RTC imagery can cause isolated false positives without multi-temporal filtering.",
+    "Urban radar layover, foreshortening, and building shadow in dense Bengaluru wards can mimic open-water backscatter.",
+    "Flooded vegetation and paddy fields produce double-bounce backscatter rather than specular dark returns."
+  ],
+  "karnataka_validation_note": "Karnataka inference outputs have NO ground-truth flood labels and are marked 'Model prediction (unvalidated)'."
+}

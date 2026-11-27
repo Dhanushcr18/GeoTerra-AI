@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>GeoTerra AI — Mission Control</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#4f4633","tertiary":"#ffd9fd","surface-container":"#04251b","on-surface":"#c8eada","secondary-container":"#205240","outline":"#9c8f79","on-tertiary":"#580065","on-tertiary-fixed":"#36003e","surface-container-low":"#012017","on-primary-fixed":"#261a00","primary-fixed":"#ffdf9f","surface":"#001710","secondary-fixed":"#b9eed6","error-container":"#93000a","on-secondary-fixed-variant":"#1d4f3e","primary":"#ffe1a7","on-error":"#690005","inverse-surface":"#c8eada","on-secondary-fixed":"#002116","secondary":"#9ed2bb","secondary-fixed-dim":"#9ed2bb","surface-variant":"#1c3a30","surface-bright":"#203f34","on-primary-fixed-variant":"#5c4300","inverse-primary":"#795900","on-error-container":"#ffdad6","on-surface-variant":"#d3c5ac","on-primary":"#402d00","inverse-on-surface":"#17362b","surface-container-lowest":"#00120b","primary-container":"#fbbf24","background":"#001710","on-background":"#c8eada","surface-container-highest":"#1c3a30","surface-dim":"#001710","on-tertiary-fixed-variant":"#7c008e","error":"#ffb4ab","on-tertiary-container":"#9100a6","primary-fixed-dim":"#f9bd22","surface-container-high":"#102f25","on-secondary":"#003828","tertiary-fixed":"#ffd6fd","tertiary-fixed-dim":"#fbabff","surface-tint":"#f9bd22","on-secondary-container":"#90c3ad","on-primary-container":"#6c4f00","tertiary-container":"#fbaeff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1rem","margin":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"headline-lg":["Inter"],"kpi-md-mobile":["JetBrains Mono"],"body-lg":["Inter"],"headline-md":["Inter"],"kpi-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"kpi-lg-mobile":["JetBrains Mono"],"body-md":["Inter"],"label-lg":["JetBrains Mono"],"kpi-md":["JetBrains Mono"],"headline-sm":["Inter"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"kpi-md-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"kpi-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"kpi-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"500"}],"kpi-md":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-16 bg-surface-container-low z-50 flex flex-col items-center py-space-md gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-on-primary-container">satellite_alt</span></div><nav class="flex flex-col items-center gap-space-sm flex-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="#" title="Overview"><span class="material-symbols-outlined">dashboard</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="flood-monitor" href="#" title="Flood Monitor"><span class="material-symbols-outlined">water_damage</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="land-change" href="#" title="Land Change"><span class="material-symbols-outlined">terrain</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="model-&amp;-data" href="#" title="Model &amp; Data"><span class="material-symbols-outlined">hub</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="impact-&amp;-value" href="#" title="Impact &amp; Value"><span class="material-symbols-outlined">insights</span></a><a aria-current="page" class="w-10 h-10 flex items-center justify-center transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="space-systems-simulation" href="#" title="Space Systems Simulation"><span class="material-symbols-outlined">orbit</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="alerts-&amp;-reports" href="#" title="Alerts &amp; Reports"><span class="material-symbols-outlined">notifications_active</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="about-&amp;-method" href="#" title="About &amp; Method"><span class="material-symbols-outlined">info</span></a></nav></aside><div class="pl-16"><header class="fixed top-0 left-16 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">GeoTerra AI</span><span class="font-label-sm text-label-sm text-on-surface-variant">Satellites see it. AI measures it. Authorities act on it.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="flood-monitor" href="#">Flood Monitor</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="land-change" href="#">Land Change</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="model-&amp;-data" href="#">Model &amp; Data</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="impact-&amp;-value" href="#">Impact &amp; Value</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="space-systems-simulation" href="#">Space Systems Simulation</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="alerts-&amp;-reports" href="#">Alerts &amp; Reports</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-&amp;-method" href="#">About &amp; Method</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Demo Mode</button><button class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Daylight</button><span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">AI: cached</span><span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">SAMPLE DATA</span><button class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-bright hover:text-on-surface transition-colors" title="Fullscreen" type="button"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface"><section class="w-full px-space-lg py-space-md bg-surface-container-low"><div class="grid grid-cols-5 gap-gutter"><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Flooded Area</div><div class="font-kpi-md text-kpi-md-mobile text-primary">1,428.5 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cropland Affected</div><div class="font-kpi-md text-kpi-md-mobile text-secondary">842.0 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estimated Loss</div><div class="font-kpi-md text-kpi-md-mobile text-primary">₹18.4 Cr</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Suspicious Land-Change</div><div class="font-kpi-md text-kpi-md-mobile text-tertiary">312.4 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Alerts</div><div class="font-kpi-md text-kpi-md-mobile text-error">7</div></div></div></section><div class="flex w-full"><div class="flex-1 min-w-0 px-space-lg py-space-md"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container rounded-xl px-space-lg py-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="relative inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<svg class="absolute inset-0 w-full h-full pointer-events-none" preserveaspectratio="none">
+<rect fill="none" height="calc(100% - 2px)" opacity="0.7" rx="999" ry="999" stroke="currentColor" stroke-dasharray="4 3" stroke-width="1.5" width="calc(100% - 2px)" x="1" y="1"></rect>
+</svg>
+<span class="w-2 h-2 rounded-full bg-on-secondary-fixed animate-pulse"></span>
+<span class="tracking-widest font-bold">SIMULATION</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Track B • Space Systems Simulation</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LEO-SAT-04 (693 KM) → HAPS-02 (20 KM) → UAV-07 (0.4 KM)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+<span class="font-label-lg text-label-lg text-primary" id="sim-clock">T+00:00:00</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">satellite_alt</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase" id="active-tier-badge">ORBIT VIEW</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-gutter items-stretch">
+<div class="col-span-12 xl:col-span-8 flex flex-col gap-gutter">
+<div class="relative w-full h-[460px] rounded-xl bg-surface-container-lowest overflow-hidden shadow-xl" id="cesium-viewport">
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest via-surface to-surface-container-low"></div>
+<svg class="absolute inset-0 w-full h-full transition-transform duration-700 ease-out" id="orbital-scene" preserveaspectratio="xMidYMid slice" viewbox="0 0 900 460">
+<defs>
+<radialgradient cx="50%" cy="115%" id="earthGlow" r="85%">
+<stop class="text-secondary-container" offset="0%" stop-color="currentColor" stop-opacity="0.35"></stop>
+<stop class="text-surface-container-high" offset="62%" stop-color="currentColor" stop-opacity="0.18"></stop>
+<stop class="text-primary-container" offset="78%" stop-color="currentColor" stop-opacity="0.28"></stop>
+<stop offset="100%" stop-color="currentColor" stop-opacity="0"></stop>
+</radialgradient>
+<radialgradient cx="50%" cy="120%" id="earthSurface" r="80%">
+<stop class="text-secondary-container" offset="0%" stop-color="currentColor" stop-opacity="1"></stop>
+<stop class="text-surface-container-high" offset="55%" stop-color="currentColor" stop-opacity="1"></stop>
+<stop class="text-surface-container" offset="100%" stop-color="currentColor" stop-opacity="1"></stop>
+</radialgradient>
+<lineargradient id="swathGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop class="text-primary-container" offset="0%" stop-color="currentColor" stop-opacity="0.35"></stop>
+<stop class="text-primary-container" offset="100%" stop-color="currentColor" stop-opacity="0.04"></stop>
+</lineargradient>
+<lineargradient id="cueBeamGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop class="text-primary-container" offset="0%" stop-color="currentColor" stop-opacity="0.95"></stop>
+<stop class="text-secondary-fixed" offset="100%" stop-color="currentColor" stop-opacity="0.95"></stop>
+</lineargradient>
+</defs>
+<g class="text-primary" opacity="0.45">
+<circle cx="85" cy="48" fill="currentColor" r="1.2"></circle>
+<circle cx="190" cy="92" fill="currentColor" r="1"></circle>
+<circle cx="275" cy="34" fill="currentColor" r="1.5"></circle>
+<circle cx="360" cy="78" fill="currentColor" r="1"></circle>
+<circle cx="480" cy="40" fill="currentColor" r="1.3"></circle>
+<circle cx="590" cy="65" fill="currentColor" r="1"></circle>
+<circle cx="710" cy="38" fill="currentColor" r="1.4"></circle>
+<circle cx="820" cy="88" fill="currentColor" r="1.1"></circle>
+<circle cx="140" cy="150" fill="currentColor" r="1"></circle>
+<circle cx="765" cy="145" fill="currentColor" r="1.2"></circle>
+<circle cx="855" cy="195" fill="currentColor" r="1"></circle>
+</g>
+<ellipse cx="470" cy="540" fill="url(#earthGlow)" rx="580" ry="310"></ellipse>
+<ellipse cx="470" cy="555" fill="url(#earthSurface)" rx="560" ry="290"></ellipse>
+<ellipse class="text-primary-container" cx="470" cy="555" fill="none" opacity="0.55" rx="560" ry="290" stroke="currentColor" stroke-width="2"></ellipse>
+<g class="text-secondary" fill="none" opacity="0.16" stroke="currentColor" stroke-width="1">
+<path d="M 120 340 Q 470 280 820 340"></path>
+<path d="M 80 390 Q 470 330 860 390"></path>
+<path d="M 280 280 Q 340 360 310 450"></path>
+<path d="M 470 265 Q 470 360 470 460"></path>
+<path d="M 660 280 Q 600 360 630 450"></path>
+</g>
+<path class="text-primary-container" d="M 110 140 Q 470 35 830 165" fill="none" opacity="0.75" stroke="currentColor" stroke-dasharray="6 4" stroke-width="2"></path>
+<polygon fill="url(#swathGrad)" points="315,78 245,320 385,320"></polygon>
+<g id="leo-sat" transform="translate(315, 78)">
+<rect class="text-primary-container" fill="currentColor" height="12" rx="2" width="28" x="-14" y="-6"></rect>
+<rect class="text-primary" fill="currentColor" height="6" rx="1" width="16" x="-32" y="-3"></rect>
+<rect class="text-primary" fill="currentColor" height="6" rx="1" width="16" x="16" y="-3"></rect>
+<circle class="text-primary-container" cx="0" cy="0" fill="none" opacity="0.5" r="18" stroke="currentColor" stroke-width="1"></circle>
+<text class="text-primary font-label-sm text-label-sm" fill="currentColor" x="22" y="-12">LEO-SAT ~693 km</text>
+</g>
+<ellipse class="text-secondary-fixed" cx="485" cy="345" fill="currentColor" fill-opacity="0.1" rx="95" ry="26" stroke="currentColor" stroke-dasharray="4 3" stroke-width="1.5"></ellipse>
+<g id="haps-craft" transform="translate(485, 205)">
+<path class="text-secondary-fixed" d="M -22 0 L 22 0 M -8 -6 L 8 6" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle class="text-secondary-fixed" cx="0" cy="0" fill="currentColor" r="5"></circle>
+<text class="text-secondary-fixed font-label-sm text-label-sm" fill="currentColor" x="16" y="-10">HAPS ~20 km</text>
+</g>
+<path class="text-primary-fixed-dim" d="M 520 355 Q 565 335 610 350" fill="none" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2"></path>
+<g id="uav-drone" transform="translate(565, 342)">
+<polygon class="text-primary-fixed-dim" fill="currentColor" points="0,-5 7,4 -7,4"></polygon>
+<text class="text-primary-fixed-dim font-label-sm text-label-sm" fill="currentColor" x="12" y="4">UAV 0.4 km</text>
+</g>
+<line class="animate-pulse" id="cue-beam-1" stroke="url(#cueBeamGrad)" stroke-dasharray="6 4" stroke-width="2" x1="315" x2="485" y1="78" y2="205"></line>
+<line class="animate-pulse" id="cue-beam-2" stroke="url(#cueBeamGrad)" stroke-dasharray="4 4" stroke-width="1.5" x1="485" x2="565" y1="205" y2="342"></line>
+<g id="flagged-site" transform="translate(610, 350)">
+<circle class="text-tertiary-container animate-ping" cx="0" cy="0" fill="none" opacity="0.65" r="18" stroke="currentColor" stroke-width="2"></circle>
+<circle class="text-tertiary-container" cx="0" cy="0" fill="currentColor" r="6"></circle>
+<text class="text-tertiary font-label-sm text-label-sm" fill="currentColor" x="14" y="18">SECTOR 4B BREACH</text>
+</g>
+</svg>
+<div class="absolute top-space-md right-space-md bg-surface-container/90 backdrop-blur-md rounded-lg px-space-md py-space-xs flex items-center gap-space-sm shadow-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface">26.14° N, 91.73° E • 60 FPS</span>
+</div>
+<div class="absolute left-space-md top-space-md bottom-20 w-28 bg-surface-container/85 backdrop-blur-md rounded-xl p-space-sm flex flex-col justify-between shadow-md">
+<div class="flex flex-col px-space-xs py-space-xs rounded-lg bg-primary-container text-on-primary-container transition-colors" id="tier-sat">
+<span class="font-label-sm text-label-sm font-bold">~693 km</span>
+<span class="font-label-sm text-label-sm">Satellite</span>
+</div>
+<div class="w-0.5 flex-1 bg-surface-variant mx-auto my-space-xs"></div>
+<div class="flex flex-col px-space-xs py-space-xs rounded-lg text-on-surface-variant transition-colors" id="tier-haps">
+<span class="font-label-sm text-label-sm font-bold">20 km</span>
+<span class="font-label-sm text-label-sm">HAPS</span>
+</div>
+<div class="w-0.5 flex-1 bg-surface-variant mx-auto my-space-xs"></div>
+<div class="flex flex-col px-space-xs py-space-xs rounded-lg text-on-surface-variant transition-colors" id="tier-ground">
+<span class="font-label-sm text-label-sm font-bold">0 km</span>
+<span class="font-label-sm text-label-sm">Surface</span>
+</div>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container/90 backdrop-blur-md p-space-xs rounded-xl shadow-md">
+<button class="preset-btn px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold transition-colors" data-preset="orbit" type="button">Orbit view</button>
+<button class="preset-btn px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" data-preset="haps" type="button">HAPS view</button>
+<button class="preset-btn px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" data-preset="drone" type="button">Drone view</button>
+<button class="preset-btn px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" data-preset="cue" type="button">Follow cue</button>
+</div>
+<div class="bg-surface-container/90 backdrop-blur-md px-space-md py-space-xs rounded-xl font-label-sm text-label-sm text-on-surface-variant shadow-md">
+            Swath: 250 km • HAPS Horizon: 504 km
+          </div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface uppercase">Mission Response Timeline</span>
+<span class="font-label-sm text-label-sm text-primary" id="timeline-status">Stage 1/4: Satellite Anomaly Detection</span>
+</div>
+<div class="grid grid-cols-4 gap-gutter">
+<button class="stage-btn bg-primary-container text-on-primary-container rounded-lg p-space-sm text-left transition-colors" data-stage="0" type="button">
+<div class="font-label-sm text-label-sm font-bold">01. Detection</div>
+<div class="font-label-sm text-label-sm opacity-85">T+00:00:12</div>
+</button>
+<button class="stage-btn bg-surface-container-high text-on-surface-variant hover:text-on-surface rounded-lg p-space-sm text-left transition-colors" data-stage="1" type="button">
+<div class="font-label-sm text-label-sm font-bold">02. HAPS Tasking</div>
+<div class="font-label-sm text-label-sm opacity-85">T+00:02:45</div>
+</button>
+<button class="stage-btn bg-surface-container-high text-on-surface-variant hover:text-on-surface rounded-lg p-space-sm text-left transition-colors" data-stage="2" type="button">
+<div class="font-label-sm text-label-sm font-bold">03. Drone Dispatch</div>
+<div class="font-label-sm text-label-sm opacity-85">T+00:08:10</div>
+</button>
+<button class="stage-btn bg-surface-container-high text-on-surface-variant hover:text-on-surface rounded-lg p-space-sm text-left transition-colors" data-stage="3" type="button">
+<div class="font-label-sm text-label-sm font-bold">04. Official Verification</div>
+<div class="font-label-sm text-label-sm opacity-85">T+00:14:20</div>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs bg-surface-container-low rounded-lg p-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary">GeoTerra AI Automated Cueing: 14m 20s</span>
+<span class="text-on-surface-variant">Manual inspection: 4h 30m (Baseline)</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500" id="timeline-bar" style="width: 25%"></div>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden mt-space-xs">
+<div class="h-full bg-error/60 rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 xl:col-span-4 flex flex-col gap-gutter">
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md flex-1">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Flagged Sites</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">AI Priority Triage</span>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">AI: ready</span>
+</div>
+<button class="w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-space-sm" id="rank-ai-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Rank flagged sites with AI</span>
+</button>
+<div class="flex flex-col gap-space-sm flex-1" id="ranked-sites-list">
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-error uppercase">#1 • Critical</span>
+<span class="font-body-md text-body-md text-on-surface truncate">Sector 4B Embankment</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Flood surge • 142.8 ha</span>
+</div>
+<span class="font-kpi-md text-headline-md text-primary shrink-0">98%</span>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary uppercase">#2 • High</span>
+<span class="font-body-md text-body-md text-on-surface truncate">Basin North Clearing</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Land-change • 64.2 ha</span>
+</div>
+<span class="font-kpi-md text-headline-md text-secondary shrink-0">87%</span>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase">#3 • Moderate</span>
+<span class="font-body-md text-body-md text-on-surface truncate">Tributary West</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cropland risk • 38.5 ha</span>
+</div>
+<span class="font-kpi-md text-headline-md text-on-surface shrink-0">74%</span>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">#4 • Watch</span>
+<span class="font-body-md text-body-md text-on-surface truncate">Delta Corridor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Waterlogging • 19.0 ha</span>
+</div>
+<span class="font-kpi-md text-headline-md text-on-surface-variant shrink-0">61%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Orbital &amp; Atmospheric Physics</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">No real HAPS or drones are operated. Values are assumptions.</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low p-space-xs rounded-lg">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" id="latency-ground" type="button">Ground</button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" id="latency-onboard" type="button">Onboard</button>
+</div>
+<button class="px-space-lg py-space-xs rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors" id="run-sim-btn" type="button">Run simulation</button>
+<button class="px-space-lg py-space-xs rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-colors" id="reset-sim-btn" type="button">Reset</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">HAPS Horizon Radius</span>
+<span class="font-kpi-md text-kpi-md text-secondary">504 km</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Geometric LOS @ 20 km</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Usable Coverage Radius</span>
+<span class="font-kpi-md text-kpi-md text-primary">180 km</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Min 5° elevation angle</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Downlink Time (Raw vs Insight)</span>
+<span class="font-kpi-md text-kpi-md text-tertiary">1.2 s</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Raw scene: 18.4 min</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Alert Latency</span>
+<span class="font-kpi-md text-kpi-md text-primary" id="latency-value">14.2 s</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="latency-mode-label">Ground processing pipeline</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const scene = document.getElementById('orbital-scene');
+    const activeTierBadge = document.getElementById('active-tier-badge');
+    const tierSat = document.getElementById('tier-sat');
+    const tierHaps = document.getElementById('tier-haps');
+    const tierGround = document.getElementById('tier-ground');
+    const presetBtns = document.querySelectorAll('.preset-btn');
+    const stageBtns = document.querySelectorAll('.stage-btn');
+    const timelineBar = document.getElementById('timeline-bar');
+    const timelineStatus = document.getElementById('timeline-status');
+    const simClock = document.getElementById('sim-clock');
+    const latencyGround = document.getElementById('latency-ground');
+    const latencyOnboard = document.getElementById('latency-onboard');
+    const latencyValue = document.getElementById('latency-value');
+    const latencyModeLabel = document.getElementById('latency-mode-label');
+    const runSimBtn = document.getElementById('run-sim-btn');
+    const resetSimBtn = document.getElementById('reset-sim-btn');
+    const rankAiBtn = document.getElementById('rank-ai-btn');
+
+    let simInterval = null;
+    let currentStage = 0;
+
+    const stageData = [
+      { label: 'Stage 1/4: Satellite Anomaly Detection', time: 'T+00:00:12', width: '25%' },
+      { label: 'Stage 2/4: HAPS Loiter & Cueing', time: 'T+00:02:45', width: '50%' },
+      { label: 'Stage 3/4: UAV Tactical Dispatch', time: 'T+00:08:10', width: '75%' },
+      { label: 'Stage 4/4: Official Authority Verification', time: 'T+00:14:20', width: '100%' }
+    ];
+
+    function setTierHighlight(tier) {
+      [tierSat, tierHaps, tierGround].forEach(el => {
+        el.classList.remove('bg-primary-container', 'text-on-primary-container');
+        el.classList.add('text-on-surface-variant');
+      });
+      if (tier === 'sat') {
+        tierSat.classList.add('bg-primary-container', 'text-on-primary-container');
+        tierSat.classList.remove('text-on-surface-variant');
+      } else if (tier === 'haps') {
+        tierHaps.classList.add('bg-primary-container', 'text-on-primary-container');
+        tierHaps.classList.remove('text-on-surface-variant');
+      } else {
+        tierGround.classList.add('bg-primary-container', 'text-on-primary-container');
+        tierGround.classList.remove('text-on-surface-variant');
+      }
+    }
+
+    presetBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        presetBtns.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold');
+        btn.classList.remove('text-on-surface-variant');
+
+        const preset = btn.dataset.preset;
+        if (preset === 'orbit') {
+          scene.style.transform = 'scale(1) translate(0px, 0px)';
+          activeTierBadge.textContent = 'ORBIT VIEW';
+          setTierHighlight('sat');
+        } else if (preset === 'haps') {
+          scene.style.transform = 'scale(1.28) translate(-30px, -25px)';
+          activeTierBadge.textContent = 'HAPS VIEW';
+          setTierHighlight('haps');
+        } else if (preset === 'drone') {
+          scene.style.transform = 'scale(1.55) translate(-95px, -85px)';
+          activeTierBadge.textContent = 'DRONE VIEW';
+          setTierHighlight('ground');
+        } else {
+          scene.style.transform = 'scale(1.18) translate(-40px, -20px)';
+          activeTierBadge.textContent = 'FOLLOW CUE';
+          setTierHighlight('haps');
+        }
+      });
+    });
+
+    function selectStage(idx) {
+      currentStage = idx;
+      stageBtns.forEach((b, i) => {
+        if (i === idx) {
+          b.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          b.classList.add('bg-primary-container', 'text-on-primary-container');
+        } else {
+          b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          b.classList.remove('bg-primary-container', 'text-on-primary-container');
+        }
+      });
+      timelineStatus.textContent = stageData[idx].label;
+      simClock.textContent = stageData[idx].time;
+      timelineBar.style.width = stageData[idx].width;
+    }
+
+    stageBtns.forEach((btn, idx) => {
+      btn.addEventListener('click', () => {
+        if (simInterval) clearInterval(simInterval);
+        selectStage(idx);
+      });
+    });
+
+    latencyGround.addEventListener('click', () => {
+      latencyGround.classList.add('bg-surface-container-high', 'text-on-surface');
+      latencyGround.classList.remove('text-on-surface-variant');
+      latencyOnboard.classList.remove('bg-surface-container-high', 'text-on-surface');
+      latencyOnboard.classList.add('text-on-surface-variant');
+      latencyValue.textContent = '14.2 s';
+      latencyModeLabel.textContent = 'Ground processing pipeline';
+    });
+
+    latencyOnboard.addEventListener('click', () => {
+      latencyOnboard.classList.add('bg-surface-container-high', 'text-on-surface');
+      latencyOnboard.classList.remove('text-on-surface-variant');
+      latencyGround.classList.remove('bg-surface-container-high', 'text-on-surface');
+      latencyGround.classList.add('text-on-surface-variant');
+      latencyValue.textContent = '1.8 s';
+      latencyModeLabel.textContent = 'Onboard edge AI inference';
+    });
+
+    runSimBtn.addEventListener('click', () => {
+      if (simInterval) clearInterval(simInterval);
+      selectStage(0);
+      simInterval = setInterval(() => {
+        if (currentStage < 3) {
+          selectStage(currentStage + 1);
+        } else {
+          clearInterval(simInterval);
+        }
+      }, 1400);
+    });
+
+    resetSimBtn.addEventListener('click', () => {
+      if (simInterval) clearInterval(simInterval);
+      selectStage(0);
+      simClock.textContent = 'T+00:00:00';
+      scene.style.transform = 'scale(1) translate(0px, 0px)';
+      activeTierBadge.textContent = 'ORBIT VIEW';
+      setTierHighlight('sat');
+    });
+
+    rankAiBtn.addEventListener('click', () => {
+      rankAiBtn.querySelector('span:last-child').textContent = 'AI Ranked (Updated)';
+      setTimeout(() => {
+        rankAiBtn.querySelector('span:last-child').textContent = 'Rank flagged sites with AI';
+      }, 2000);
+    });
+  })();
+</script></div><aside class="w-80 shrink-0 bg-surface-container-low p-space-md flex flex-col gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container p-space-xs rounded-lg"><button class="flex-1 py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm" type="button">Alerts</button><button class="flex-1 py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Layers</button><button class="flex-1 py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Details</button></div><div class="flex flex-col gap-space-sm flex-1"><div class="bg-surface-container rounded-xl p-space-sm"><div class="font-label-sm text-label-sm text-error uppercase">Critical • Flood Surge</div><div class="font-body-md text-body-md text-on-surface">Sector 4B embankment breach detected</div></div><div class="bg-surface-container rounded-xl p-space-sm"><div class="font-label-sm text-label-sm text-primary uppercase">Warning • Land Change</div><div class="font-body-md text-body-md text-on-surface">Unpermitted clearing near Basin North</div></div></div><button class="w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors" type="button">Generate Evidence Report (PDF)</button></aside></div></main><footer class="w-full bg-surface-container-low py-space-md px-space-lg text-center"><p class="font-label-sm text-label-sm text-on-surface-variant">Protective use only • Area-level analysis • No tracking of individuals</p></footer></div></body></html>

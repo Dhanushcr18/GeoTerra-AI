@@ -1,0 +1,583 @@
+{
+  "generated_at": "2026-11-26T00:50:06.502710+00:00",
+  "scenes": [
+    {
+      "year": 2019,
+      "id": "S2B_MSIL2A_20190330T050659_R019_T43PGQ_20201007T122704",
+      "date": "2019-03-30"
+    },
+    {
+      "year": 2022,
+      "id": "S2B_MSIL2A_20220304T050709_R019_T43PGQ_20220305T000024",
+      "date": "2022-03-04"
+    },
+    {
+      "year": 2024,
+      "id": "S2B_MSIL2A_20240313T050649_R019_T43PGQ_20240313T171334",
+      "date": "2024-03-13"
+    },
+    {
+      "year": 2026,
+      "id": "S2B_MSIL2A_20260201T050929_R019_T43PGQ_20260201T085208",
+      "date": "2026-02-01"
+    }
+  ],
+  "source": "Sentinel-2 L2A (Microsoft Planetary Computer STAC, dry-season Feb-Mar, SCL cloud-masked)",
+  "city_images": {
+    "before": "/api/images/urban/city_2019.png",
+    "after": "/api/images/urban/city_2026.png",
+    "overlay": "/api/images/urban/city_change.png"
+  },
+  "corridors": [
+    {
+      "id": "bellandur_sarjapur",
+      "ward_no": 150,
+      "name": "Bellandur \u2013 Sarjapur Rd",
+      "zone": "Mahadevapura / East",
+      "lat": 12.922,
+      "lon": 77.682,
+      "dist_core_km": 10.96,
+      "window_land_ha": 928.53,
+      "built_2019_ha": 666.66,
+      "built_2026_ha": 739.99,
+      "new_urban_ha": 109.88,
+      "active_construction_ha": 11.15,
+      "veg_2019_ha": 276.72,
+      "veg_2026_ha": 124.9,
+      "veg_loss_ha": 113.22,
+      "veg_change_pct": -54.9,
+      "annual_growth_ha": 16.06,
+      "growth_rate_pct": 11.0,
+      "remaining_developable_ha": 95.69,
+      "water_note": "Bellandur\u2013Varthur valley corridor; high stormwater & Cauvery tail-end demand.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 666.66,
+          "veg_ha": 276.72
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 633.54,
+          "veg_ha": 225.64
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 750.53,
+          "veg_ha": 106.38
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 739.99,
+          "veg_ha": 124.9
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/bellandur_sarjapur_2019.png",
+        "y2022": "/api/images/urban/bellandur_sarjapur_2022.png",
+        "y2024": "/api/images/urban/bellandur_sarjapur_2024.png",
+        "after": "/api/images/urban/bellandur_sarjapur_2026.png",
+        "overlay": "/api/images/urban/bellandur_sarjapur_change.png"
+      }
+    },
+    {
+      "id": "varthur_panathur",
+      "ward_no": 149,
+      "name": "Varthur \u2013 Panathur",
+      "zone": "East Growth Fringe",
+      "lat": 12.942,
+      "lon": 77.732,
+      "dist_core_km": 15.25,
+      "window_land_ha": 944.81,
+      "built_2019_ha": 514.67,
+      "built_2026_ha": 653.78,
+      "new_urban_ha": 174.5,
+      "active_construction_ha": 17.06,
+      "veg_2019_ha": 434.84,
+      "veg_2026_ha": 184.35,
+      "veg_loss_ha": 248.51,
+      "veg_change_pct": -57.6,
+      "annual_growth_ha": 25.51,
+      "growth_rate_pct": 27.0,
+      "remaining_developable_ha": 196.55,
+      "water_note": "Rapid apartment infill along narrow village roads; acute feeder road & UGD need.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 514.67,
+          "veg_ha": 434.84
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 603.96,
+          "veg_ha": 320.8
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 715.91,
+          "veg_ha": 217.22
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 653.78,
+          "veg_ha": 184.35
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/varthur_panathur_2019.png",
+        "y2022": "/api/images/urban/varthur_panathur_2022.png",
+        "y2024": "/api/images/urban/varthur_panathur_2024.png",
+        "after": "/api/images/urban/varthur_panathur_2026.png",
+        "overlay": "/api/images/urban/varthur_panathur_change.png"
+      }
+    },
+    {
+      "id": "whitefield_mahadevapura",
+      "ward_no": 84,
+      "name": "Whitefield \u2013 Hoodi",
+      "zone": "Mahadevapura / East",
+      "lat": 12.978,
+      "lon": 77.738,
+      "dist_core_km": 15.55,
+      "window_land_ha": 943.48,
+      "built_2019_ha": 563.4,
+      "built_2026_ha": 695.85,
+      "new_urban_ha": 174.87,
+      "active_construction_ha": 18.28,
+      "veg_2019_ha": 393.0,
+      "veg_2026_ha": 183.89,
+      "veg_loss_ha": 163.15,
+      "veg_change_pct": -53.2,
+      "annual_growth_ha": 25.57,
+      "growth_rate_pct": 23.5,
+      "remaining_developable_ha": 153.28,
+      "water_note": "IT corridor densification; high stormwater & Metro last-mile feeder demand.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 563.4,
+          "veg_ha": 393.0
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 614.77,
+          "veg_ha": 271.48
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 793.35,
+          "veg_ha": 101.23
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 695.85,
+          "veg_ha": 183.89
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/whitefield_mahadevapura_2019.png",
+        "y2022": "/api/images/urban/whitefield_mahadevapura_2022.png",
+        "y2024": "/api/images/urban/whitefield_mahadevapura_2024.png",
+        "after": "/api/images/urban/whitefield_mahadevapura_2026.png",
+        "overlay": "/api/images/urban/whitefield_mahadevapura_change.png"
+      }
+    },
+    {
+      "id": "thanisandra_nagavara",
+      "ward_no": 6,
+      "name": "Thanisandra \u2013 Nagavara",
+      "zone": "North / Yelahanka",
+      "lat": 13.058,
+      "lon": 77.632,
+      "dist_core_km": 10.43,
+      "window_land_ha": 956.72,
+      "built_2019_ha": 821.1,
+      "built_2026_ha": 812.84,
+      "new_urban_ha": 44.83,
+      "active_construction_ha": 0.85,
+      "veg_2019_ha": 169.66,
+      "veg_2026_ha": 113.3,
+      "veg_loss_ha": 44.47,
+      "veg_change_pct": -33.2,
+      "annual_growth_ha": 6.55,
+      "growth_rate_pct": -1.0,
+      "remaining_developable_ha": 48.21,
+      "water_note": "High-rise housing belt; groundwater stress & Hebbal valley drain bottleneck.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 821.1,
+          "veg_ha": 169.66
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 779.93,
+          "veg_ha": 138.17
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 884.0,
+          "veg_ha": 49.56
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 812.84,
+          "veg_ha": 113.3
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/thanisandra_nagavara_2019.png",
+        "y2022": "/api/images/urban/thanisandra_nagavara_2022.png",
+        "y2024": "/api/images/urban/thanisandra_nagavara_2024.png",
+        "after": "/api/images/urban/thanisandra_nagavara_2026.png",
+        "overlay": "/api/images/urban/thanisandra_nagavara_change.png"
+      }
+    },
+    {
+      "id": "yelahanka_kogilu",
+      "ward_no": 4,
+      "name": "Yelahanka \u2013 Kogilu",
+      "zone": "North Growth Fringe",
+      "lat": 13.105,
+      "lon": 77.606,
+      "dist_core_km": 14.88,
+      "window_land_ha": 888.78,
+      "built_2019_ha": 601.21,
+      "built_2026_ha": 691.69,
+      "new_urban_ha": 135.73,
+      "active_construction_ha": 15.15,
+      "veg_2019_ha": 303.21,
+      "veg_2026_ha": 165.2,
+      "veg_loss_ha": 120.25,
+      "veg_change_pct": -45.5,
+      "annual_growth_ha": 19.84,
+      "growth_rate_pct": 15.0,
+      "remaining_developable_ha": 108.21,
+      "water_note": "Peri-urban residential expansion near airport road; needs trunk drainage.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 601.21,
+          "veg_ha": 303.21
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 617.96,
+          "veg_ha": 242.79
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 722.32,
+          "veg_ha": 128.73
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 691.69,
+          "veg_ha": 165.2
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/yelahanka_kogilu_2019.png",
+        "y2022": "/api/images/urban/yelahanka_kogilu_2022.png",
+        "y2024": "/api/images/urban/yelahanka_kogilu_2024.png",
+        "after": "/api/images/urban/yelahanka_kogilu_2026.png",
+        "overlay": "/api/images/urban/yelahanka_kogilu_change.png"
+      }
+    },
+    {
+      "id": "devanahalli_kiadb",
+      "ward_no": 0,
+      "name": "Devanahalli \u2013 Aerospace Park",
+      "zone": "North Airport Corridor",
+      "lat": 13.195,
+      "lon": 77.69,
+      "dist_core_km": 26.9,
+      "window_land_ha": 1098.95,
+      "built_2019_ha": 990.26,
+      "built_2026_ha": 934.76,
+      "new_urban_ha": 52.69,
+      "active_construction_ha": 3.64,
+      "veg_2019_ha": 113.11,
+      "veg_2026_ha": 140.84,
+      "veg_loss_ha": 48.12,
+      "veg_change_pct": 24.5,
+      "annual_growth_ha": 7.7,
+      "growth_rate_pct": -5.6,
+      "remaining_developable_ha": 54.3,
+      "water_note": "Greenfield logistics/industrial conversion; early piped-water & transit planning critical.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 990.26,
+          "veg_ha": 113.11
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 944.57,
+          "veg_ha": 135.34
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 1020.48,
+          "veg_ha": 58.65
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 934.76,
+          "veg_ha": 140.84
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/devanahalli_kiadb_2019.png",
+        "y2022": "/api/images/urban/devanahalli_kiadb_2022.png",
+        "y2024": "/api/images/urban/devanahalli_kiadb_2024.png",
+        "after": "/api/images/urban/devanahalli_kiadb_2026.png",
+        "overlay": "/api/images/urban/devanahalli_kiadb_change.png"
+      }
+    },
+    {
+      "id": "electronic_city",
+      "ward_no": 192,
+      "name": "Electronic City \u2013 Bommasandra",
+      "zone": "South-East Fringe",
+      "lat": 12.838,
+      "lon": 77.674,
+      "dist_core_km": 17.17,
+      "window_land_ha": 940.26,
+      "built_2019_ha": 676.0,
+      "built_2026_ha": 742.19,
+      "new_urban_ha": 106.4,
+      "active_construction_ha": 3.3,
+      "veg_2019_ha": 269.82,
+      "veg_2026_ha": 165.58,
+      "veg_loss_ha": 88.15,
+      "veg_change_pct": -38.6,
+      "annual_growth_ha": 15.56,
+      "growth_rate_pct": 9.8,
+      "remaining_developable_ha": 104.04,
+      "water_note": "Tech/industrial belt; high tanker dependency & arterial junction congestion.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 676.0,
+          "veg_ha": 269.82
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 695.09,
+          "veg_ha": 201.87
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 812.76,
+          "veg_ha": 105.9
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 742.19,
+          "veg_ha": 165.58
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/electronic_city_2019.png",
+        "y2022": "/api/images/urban/electronic_city_2022.png",
+        "y2024": "/api/images/urban/electronic_city_2024.png",
+        "after": "/api/images/urban/electronic_city_2026.png",
+        "overlay": "/api/images/urban/electronic_city_change.png"
+      }
+    },
+    {
+      "id": "kengeri_mysore_rd",
+      "ward_no": 159,
+      "name": "Kengeri \u2013 Mysore Rd",
+      "zone": "South-West Fringe",
+      "lat": 12.905,
+      "lon": 77.484,
+      "dist_core_km": 14.09,
+      "window_land_ha": 951.37,
+      "built_2019_ha": 553.06,
+      "built_2026_ha": 670.94,
+      "new_urban_ha": 148.23,
+      "active_construction_ha": 3.62,
+      "veg_2019_ha": 422.85,
+      "veg_2026_ha": 244.29,
+      "veg_loss_ha": 121.75,
+      "veg_change_pct": -42.2,
+      "annual_growth_ha": 21.67,
+      "growth_rate_pct": 21.3,
+      "remaining_developable_ha": 185.29,
+      "water_note": "Metro-induced suburban infill along Vrishabhavathi valley; sanitation & feeder roads.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 553.06,
+          "veg_ha": 422.85
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 602.99,
+          "veg_ha": 315.76
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 769.91,
+          "veg_ha": 160.0
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 670.94,
+          "veg_ha": 244.29
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/kengeri_mysore_rd_2019.png",
+        "y2022": "/api/images/urban/kengeri_mysore_rd_2022.png",
+        "y2024": "/api/images/urban/kengeri_mysore_rd_2024.png",
+        "after": "/api/images/urban/kengeri_mysore_rd_2026.png",
+        "overlay": "/api/images/urban/kengeri_mysore_rd_change.png"
+      }
+    },
+    {
+      "id": "hsr_bommanahalli",
+      "ward_no": 175,
+      "name": "HSR \u2013 Bommanahalli",
+      "zone": "Bommanahalli / South-East",
+      "lat": 12.904,
+      "lon": 77.638,
+      "dist_core_km": 8.87,
+      "window_land_ha": 823.95,
+      "built_2019_ha": 693.03,
+      "built_2026_ha": 737.64,
+      "new_urban_ha": 57.29,
+      "active_construction_ha": 0.61,
+      "veg_2019_ha": 142.88,
+      "veg_2026_ha": 47.91,
+      "veg_loss_ha": 68.93,
+      "veg_change_pct": -66.5,
+      "annual_growth_ha": 8.38,
+      "growth_rate_pct": 6.4,
+      "remaining_developable_ha": 3.92,
+      "water_note": "Dense commercial-residential infill; urban heat & local drainage capacity upgrades.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 693.03,
+          "veg_ha": 142.88
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 706.55,
+          "veg_ha": 68.99
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 733.29,
+          "veg_ha": 50.5
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 737.64,
+          "veg_ha": 47.91
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/hsr_bommanahalli_2019.png",
+        "y2022": "/api/images/urban/hsr_bommanahalli_2022.png",
+        "y2024": "/api/images/urban/hsr_bommanahalli_2024.png",
+        "after": "/api/images/urban/hsr_bommanahalli_2026.png",
+        "overlay": "/api/images/urban/hsr_bommanahalli_change.png"
+      }
+    },
+    {
+      "id": "jayanagar_baseline",
+      "ward_no": 168,
+      "name": "Jayanagar \u2013 Basavanagudi",
+      "zone": "South Core Baseline",
+      "lat": 12.93,
+      "lon": 77.583,
+      "dist_core_km": 4.79,
+      "window_land_ha": 822.83,
+      "built_2019_ha": 466.45,
+      "built_2026_ha": 612.43,
+      "new_urban_ha": 142.1,
+      "active_construction_ha": 4.12,
+      "veg_2019_ha": 363.19,
+      "veg_2026_ha": 139.11,
+      "veg_loss_ha": 150.42,
+      "veg_change_pct": -61.7,
+      "annual_growth_ha": 21.34,
+      "growth_rate_pct": 31.3,
+      "remaining_developable_ha": 128.12,
+      "water_note": "Mature planned core baseline with established canopy & gridded drainage.",
+      "history": [
+        {
+          "year": 2019,
+          "date": "2019-03-30",
+          "built_ha": 466.45,
+          "veg_ha": 363.19
+        },
+        {
+          "year": 2022,
+          "date": "2022-03-04",
+          "built_ha": 534.97,
+          "veg_ha": 209.47
+        },
+        {
+          "year": 2024,
+          "date": "2024-03-13",
+          "built_ha": 534.56,
+          "veg_ha": 205.19
+        },
+        {
+          "year": 2026,
+          "date": "2026-02-01",
+          "built_ha": 612.43,
+          "veg_ha": 139.11
+        }
+      ],
+      "images": {
+        "before": "/api/images/urban/jayanagar_baseline_2019.png",
+        "y2022": "/api/images/urban/jayanagar_baseline_2022.png",
+        "y2024": "/api/images/urban/jayanagar_baseline_2024.png",
+        "after": "/api/images/urban/jayanagar_baseline_2026.png",
+        "overlay": "/api/images/urban/jayanagar_baseline_change.png"
+      }
+    }
+  ]
+}

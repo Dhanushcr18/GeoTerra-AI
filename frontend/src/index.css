@@ -1,0 +1,111 @@
+@import "leaflet/dist/leaflet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --eo-surface: #001710;
+  --eo-surface-lowest: #00120b;
+  --eo-surface-low: #012017;
+  --eo-surface-container: #04251b;
+  --eo-surface-high: #102f25;
+  --eo-surface-highest: #1c3a30;
+  --eo-surface-bright: #203f34;
+  --eo-on-surface: #c8eada;
+  --eo-on-surface-variant: #d3c5ac;
+  --eo-primary: #ffe1a7;
+  --eo-on-primary: #402d00;
+  --eo-secondary: #a6d0bd;
+  --eo-secondary-container: #274e40;
+  --eo-on-secondary-container: #95beac;
+  --eo-tertiary: #72ff9e;
+  --eo-tertiary-container: #4fe284;
+  --eo-on-tertiary-container: #00612f;
+  --eo-border: rgba(166, 208, 189, 0.14);
+}
+
+html.daylight {
+  --eo-surface: #f2efe4;
+  --eo-surface-lowest: #e5e1d2;
+  --eo-surface-low: #ebe7da;
+  --eo-surface-container: #faf7ee;
+  --eo-surface-high: #e6e9df;
+  --eo-surface-highest: #d6ded5;
+  --eo-surface-bright: #cbd6ca;
+  --eo-on-surface: #0b2b21;
+  --eo-on-surface-variant: #37574b;
+  --eo-primary: #8a5a00;
+  --eo-on-primary: #fff8e7;
+  --eo-secondary: #155e46;
+  --eo-secondary-container: #cde7da;
+  --eo-on-secondary-container: #0b2b21;
+  --eo-tertiary: #007a3d;
+  --eo-tertiary-container: #b5f5cc;
+  --eo-on-tertiary-container: #003919;
+  --eo-border: rgba(11, 43, 33, 0.16);
+}
+
+@layer base {
+  body {
+    background-color: var(--eo-surface);
+    color: var(--eo-on-surface);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    overscroll-behavior: none;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #fbbf24;
+    outline-offset: 2px;
+  }
+}
+
+.eo-glass {
+  background-color: color-mix(in srgb, var(--eo-surface-container) 90%, transparent);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--eo-border);
+  box-shadow: 0 8px 32px -4px rgba(7, 24, 18, 0.55);
+}
+
+.eo-sample-stripes {
+  background: repeating-linear-gradient(
+    -45deg,
+    #facc15,
+    #facc15 14px,
+    #eab308 14px,
+    #eab308 28px
+  );
+  color: #0b2b21;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.leaflet-container {
+  background: #012017;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #274e40;
+  border-radius: 9999px;
+}
+
+@keyframes radar-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar-spin {
+  animation: radar-spin 8s linear infinite;
+}

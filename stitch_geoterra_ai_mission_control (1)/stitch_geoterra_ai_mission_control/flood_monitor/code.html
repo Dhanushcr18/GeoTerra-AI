@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>GeoTerra AI — Mission Control</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#4f4633","tertiary":"#ffd9fd","surface-container":"#04251b","on-surface":"#c8eada","secondary-container":"#205240","outline":"#9c8f79","on-tertiary":"#580065","on-tertiary-fixed":"#36003e","surface-container-low":"#012017","on-primary-fixed":"#261a00","primary-fixed":"#ffdf9f","surface":"#001710","secondary-fixed":"#b9eed6","error-container":"#93000a","on-secondary-fixed-variant":"#1d4f3e","primary":"#ffe1a7","on-error":"#690005","inverse-surface":"#c8eada","on-secondary-fixed":"#002116","secondary":"#9ed2bb","secondary-fixed-dim":"#9ed2bb","surface-variant":"#1c3a30","surface-bright":"#203f34","on-primary-fixed-variant":"#5c4300","inverse-primary":"#795900","on-error-container":"#ffdad6","on-surface-variant":"#d3c5ac","on-primary":"#402d00","inverse-on-surface":"#17362b","surface-container-lowest":"#00120b","primary-container":"#fbbf24","background":"#001710","on-background":"#c8eada","surface-container-highest":"#1c3a30","surface-dim":"#001710","on-tertiary-fixed-variant":"#7c008e","error":"#ffb4ab","on-tertiary-container":"#9100a6","primary-fixed-dim":"#f9bd22","surface-container-high":"#102f25","on-secondary":"#003828","tertiary-fixed":"#ffd6fd","tertiary-fixed-dim":"#fbabff","surface-tint":"#f9bd22","on-secondary-container":"#90c3ad","on-primary-container":"#6c4f00","tertiary-container":"#fbaeff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1rem","margin":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"headline-lg":["Inter"],"kpi-md-mobile":["JetBrains Mono"],"body-lg":["Inter"],"headline-md":["Inter"],"kpi-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"kpi-lg-mobile":["JetBrains Mono"],"body-md":["Inter"],"label-lg":["JetBrains Mono"],"kpi-md":["JetBrains Mono"],"headline-sm":["Inter"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"kpi-md-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"kpi-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"kpi-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"500"}],"kpi-md":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-16 bg-surface-container-low z-50 flex flex-col items-center py-space-md gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-on-primary-container">satellite_alt</span></div><nav class="flex flex-col items-center gap-space-sm flex-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="#" title="Overview"><span class="material-symbols-outlined">dashboard</span></a><a aria-current="page" class="w-10 h-10 flex items-center justify-center transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="flood-monitor" href="#" title="Flood Monitor"><span class="material-symbols-outlined">water_damage</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="land-change" href="#" title="Land Change"><span class="material-symbols-outlined">terrain</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="model-&amp;-data" href="#" title="Model &amp; Data"><span class="material-symbols-outlined">hub</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="impact-&amp;-value" href="#" title="Impact &amp; Value"><span class="material-symbols-outlined">insights</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="space-systems-simulation" href="#" title="Space Systems Simulation"><span class="material-symbols-outlined">orbit</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="alerts-&amp;-reports" href="#" title="Alerts &amp; Reports"><span class="material-symbols-outlined">notifications_active</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="about-&amp;-method" href="#" title="About &amp; Method"><span class="material-symbols-outlined">info</span></a></nav></aside><div class="pl-16"><header class="fixed top-0 left-16 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">GeoTerra AI</span><span class="font-label-sm text-label-sm text-on-surface-variant">Satellites see it. AI measures it. Authorities act on it.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="flood-monitor" href="#">Flood Monitor</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="land-change" href="#">Land Change</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="model-&amp;-data" href="#">Model &amp; Data</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="impact-&amp;-value" href="#">Impact &amp; Value</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="space-systems-simulation" href="#">Space Systems Simulation</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="alerts-&amp;-reports" href="#">Alerts &amp; Reports</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-&amp;-method" href="#">About &amp; Method</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Demo Mode</button><button class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Daylight</button><span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">AI: cached</span><span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">SAMPLE DATA</span><button class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-bright hover:text-on-surface transition-colors" title="Fullscreen" type="button"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface"><section class="w-full px-space-lg py-space-md bg-surface-container-low"><div class="grid grid-cols-5 gap-gutter"><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Flooded Area</div><div class="font-kpi-md text-kpi-md-mobile text-primary">1,428.5 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cropland Affected</div><div class="font-kpi-md text-kpi-md-mobile text-secondary">842.0 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estimated Loss</div><div class="font-kpi-md text-kpi-md-mobile text-primary">₹18.4 Cr</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Suspicious Land-Change</div><div class="font-kpi-md text-kpi-md-mobile text-tertiary">312.4 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Alerts</div><div class="font-kpi-md text-kpi-md-mobile text-error">7</div></div></div></section><div class="flex w-full"><div class="flex-1 min-w-0 px-space-lg py-space-md"><div class="flex flex-col w-full gap-space-lg">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-stretch">
+<div class="xl:col-span-8 flex flex-col gap-space-md min-w-0">
+<div class="relative w-full h-[640px] rounded-xl overflow-hidden bg-surface-container shadow-xl select-none" id="flood-map-container">
+<div class="absolute inset-0 w-full h-full" id="map-post-flood">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-75" data-location="Brahmaputra River Basin, Assam, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8vzM_8dCFxncjnf9I1xt_6hLyeGVn1R0Kw28Vb-0MQSRZRMDDfqFr_euXodXToHbTFC4kwBabIX-6ICDshDrCHmUEV-oRuYzTUsuYhCsCVklhI0TW2ZSDXgfpy0bnuexbST265YpP7Fajdy2EAOtLNzrlAhGl0oGVB0FVFHZy-ns30bls2IhC2G_jrKlnsvHGkXX_l0ojoTkt1mENKqmUrd1d8p73vd5ShCdzwN-s')"></div>
+<div class="absolute inset-0 bg-gradient-to-tr from-surface/70 via-surface-container/30 to-transparent"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none" preserveaspectratio="xMidYMid slice" viewbox="0 0 800 600">
+<path class="text-tertiary-fixed-dim fill-current opacity-45" d="M-20,180 C120,160 220,240 360,210 C500,180 620,120 820,150 L820,230 C640,210 510,270 370,290 C210,310 100,250 -20,270 Z"></path>
+<path class="text-tertiary-container fill-current opacity-55 stroke-current" d="M40,220 C160,190 250,310 410,270 C540,235 660,160 790,195 L790,340 C650,310 530,375 390,360 C230,340 130,290 40,310 Z" stroke-width="2"></path>
+<path class="text-tertiary-container fill-current opacity-55 stroke-current" d="M180,360 C260,340 340,385 430,370 C490,360 520,410 470,440 C390,480 240,450 180,360 Z" stroke-width="2"></path>
+<path class="text-error stroke-current" d="M90,140 L290,260 L480,250 L690,390" fill="none" stroke-linecap="round" stroke-width="3.5"></path>
+<path class="text-error stroke-current" d="M310,120 L340,310 L270,490" fill="none" stroke-dasharray="6 4" stroke-width="2.5"></path>
+<rect class="text-primary-container fill-current opacity-90" height="14" rx="2" width="14" x="265" y="245"></rect>
+<rect class="text-primary-container fill-current opacity-90" height="10" rx="2" width="10" x="285" y="255"></rect>
+<rect class="text-primary-container fill-current opacity-90" height="12" rx="2" width="16" x="445" y="340"></rect>
+<rect class="text-primary-container fill-current opacity-90" height="12" rx="2" width="12" x="415" y="210"></rect>
+<polygon class="text-primary stroke-current opacity-80" fill="none" points="70,95 730,85 755,515 60,525" stroke-dasharray="10 6" stroke-width="2"></polygon>
+</svg>
+</div>
+<div class="absolute inset-0 w-full h-full overflow-hidden" id="map-pre-flood" style="clip-path: inset(0 50% 0 0);">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-90" data-location="Brahmaputra River Basin, Assam, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8vzM_8dCFxncjnf9I1xt_6hLyeGVn1R0Kw28Vb-0MQSRZRMDDfqFr_euXodXToHbTFC4kwBabIX-6ICDshDrCHmUEV-oRuYzTUsuYhCsCVklhI0TW2ZSDXgfpy0bnuexbST265YpP7Fajdy2EAOtLNzrlAhGl0oGVB0FVFHZy-ns30bls2IhC2G_jrKlnsvHGkXX_l0ojoTkt1mENKqmUrd1d8p73vd5ShCdzwN-s')"></div>
+<div class="absolute inset-0 bg-surface-container-low/40"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none" preserveaspectratio="xMidYMid slice" viewbox="0 0 800 600">
+<path class="text-tertiary-fixed-dim fill-current opacity-45" d="M-20,180 C120,160 220,240 360,210 C500,180 620,120 820,150 L820,230 C640,210 510,270 370,290 C210,310 100,250 -20,270 Z"></path>
+<path class="text-on-surface-variant stroke-current opacity-70" d="M90,140 L290,260 L480,250 L690,390" fill="none" stroke-width="2.5"></path>
+<polygon class="text-primary stroke-current opacity-80" fill="none" points="70,95 730,85 755,515 60,525" stroke-dasharray="10 6" stroke-width="2"></polygon>
+</svg>
+</div>
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute top-[38%] left-[34%] flex items-center gap-space-xs bg-surface-container-high/90 backdrop-blur-md px-space-sm py-space-xs rounded-full shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="material-symbols-outlined text-primary text-[16px]">local_hospital</span>
+<span class="font-label-sm text-label-sm text-primary">District Hospital</span>
+</div>
+<div class="absolute top-[42%] left-[58%] flex items-center gap-space-xs bg-surface-container-high/90 backdrop-blur-md px-space-sm py-space-xs rounded-full shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="material-symbols-outlined text-primary text-[16px]">alt_route</span>
+<span class="font-label-sm text-label-sm text-primary">NH-715 Bridge</span>
+</div>
+<div class="absolute top-[64%] left-[48%] flex items-center gap-space-xs bg-surface-container-high/90 backdrop-blur-md px-space-sm py-space-xs rounded-full shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="material-symbols-outlined text-primary text-[16px]">bolt</span>
+<span class="font-label-sm text-label-sm text-primary">33kV Substation</span>
+</div>
+</div>
+<div class="absolute top-0 bottom-0 w-1 bg-primary-container cursor-ew-resize z-20" id="swipe-divider" style="left: 50%;">
+<div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-primary-container text-on-primary-container shadow-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">compare_arrows</span>
+</div>
+</div>
+<div class="absolute top-space-md left-space-md z-30 flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-high/90 backdrop-blur-md p-space-xs rounded-lg shadow-md">
+<button class="view-mode-btn px-space-sm py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm transition-colors" data-view-mode="2d" type="button">2D</button>
+<button class="view-mode-btn px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" data-view-mode="3d" type="button">3D</button>
+</div>
+<div class="flex items-center bg-surface-container-high/90 backdrop-blur-md p-space-xs rounded-lg shadow-md">
+<button class="base-layer-btn px-space-sm py-space-xs rounded-lg bg-surface-bright text-on-surface font-label-sm text-label-sm transition-colors" data-base-layer="street" type="button">Street</button>
+<button class="base-layer-btn px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" data-base-layer="satellite" type="button">Satellite</button>
+</div>
+</div>
+<div class="absolute top-space-md right-space-md z-30">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high/95 backdrop-blur-md text-primary-container font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[14px]">science</span>
+            Model prediction (unvalidated)
+          </span>
+</div>
+<div class="absolute bottom-space-md left-space-md z-30 pointer-events-none">
+<span class="px-space-sm py-space-xs rounded-lg bg-surface-container-low/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm shadow-md">Pre-Flood: 12 Aug</span>
+</div>
+<div class="absolute bottom-space-md right-space-md z-30 pointer-events-none">
+<span class="px-space-sm py-space-xs rounded-lg bg-surface-container-low/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-md">Post-Flood: 18 Aug</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md flex flex-wrap items-center justify-between gap-space-md shadow-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Flood Extent (55%)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Permanent Water</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Affected Roads</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Buildings</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">AOI: 26.75°N, 94.21°E • Sentinel-1 SAR</span>
+</div>
+</div>
+<div class="xl:col-span-4 flex flex-col gap-space-md min-w-0">
+<div class="grid grid-cols-2 gap-gutter">
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Flooded Area</div>
+<div class="font-kpi-md text-kpi-md text-tertiary mt-space-xs">1,428.5 <span class="font-label-lg text-label-lg">ha</span></div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cropland</div>
+<div class="font-kpi-md text-kpi-md text-secondary mt-space-xs">842.0 <span class="font-label-lg text-label-lg">ha</span></div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Built-up</div>
+<div class="font-kpi-md text-kpi-md text-primary mt-space-xs">64.2 <span class="font-label-lg text-label-lg">ha</span></div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Roads</div>
+<div class="font-kpi-md text-kpi-md text-error mt-space-xs">18.7 <span class="font-label-lg text-label-lg">km</span></div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Affected Settlements</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Sectors</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="bg-surface-container-high rounded-lg p-space-sm flex items-center justify-between gap-space-sm">
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">Majuli North Ward 4</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Est. 4,200 residents • 312 ha</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm shrink-0">CRITICAL</span>
+</div>
+<div class="bg-surface-container-high rounded-lg p-space-sm flex items-center justify-between gap-space-sm">
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">Jorhat Riverine Belt</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Est. 2,850 residents • 198 ha</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm shrink-0">HIGH</span>
+</div>
+<div class="bg-surface-container-high rounded-lg p-space-sm flex items-center justify-between gap-space-sm">
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">Kaziranga Buffer Zone</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Est. 940 residents • 114 ha</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">MODERATE</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Critical Infrastructure</h2>
+<div class="flex flex-col gap-space-xs">
+<div class="bg-surface-container-high rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px]">local_hospital</span>
+<span class="font-body-md text-body-md text-on-surface">District General Hospital</span>
+</div>
+<span class="font-label-sm text-label-sm text-error">AT RISK</span>
+</div>
+<div class="bg-surface-container-high rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">alt_route</span>
+<span class="font-body-md text-body-md text-on-surface">NH-715 River Crossing</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container">SUBMERGED</span>
+</div>
+<div class="bg-surface-container-high rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+<span class="font-body-md text-body-md text-on-surface">33kV Grid Substation B</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">OPERATIONAL</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<button class="w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-space-sm" id="generate-ai-alert-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span>Generate AI alert</span>
+</button>
+<div class="flex justify-center">
+<span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm text-center">
+            AI-assisted, requires official verification
+          </span>
+</div>
+<div class="hidden bg-surface-container-high rounded-lg p-space-sm text-on-surface font-body-md text-body-md" id="ai-alert-preview">
+<div class="font-label-sm text-label-sm text-tertiary mb-space-xs">DRAFT DISPATCH • READY FOR REVIEW</div>
+          Flash flood surge detected in Majuli North Ward 4 (1,428.5 ha). Recommend immediate evacuation advisory for 4,200 residents and rerouting of NH-715 traffic.
+        </div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const container = document.getElementById('flood-map-container');
+    const preFlood = document.getElementById('map-pre-flood');
+    const divider = document.getElementById('swipe-divider');
+    let isDragging = false;
+
+    function updateSwipe(clientX) {
+      const rect = container.getBoundingClientRect();
+      let x = clientX - rect.left;
+      x = Math.max(0, Math.min(x, rect.width));
+      const pct = (x / rect.width) * 100;
+      preFlood.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+      divider.style.left = `${pct}%`;
+    }
+
+    divider.addEventListener('mousedown', () => { isDragging = true; });
+    window.addEventListener('mouseup', () => { isDragging = false; });
+    window.addEventListener('mousemove', (e) => {
+      if (isDragging) updateSwipe(e.clientX);
+    });
+
+    divider.addEventListener('touchstart', () => { isDragging = true; });
+    window.addEventListener('touchend', () => { isDragging = false; });
+    window.addEventListener('touchmove', (e) => {
+      if (isDragging && e.touches[0]) updateSwipe(e.touches[0].clientX);
+    });
+
+    document.querySelectorAll('.view-mode-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.view-mode-btn').forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-container');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary-container');
+        btn.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    document.querySelectorAll('.base-layer-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.base-layer-btn').forEach(b => {
+          b.classList.remove('bg-surface-bright', 'text-on-surface');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-surface-bright', 'text-on-surface');
+        btn.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    const alertBtn = document.getElementById('generate-ai-alert-btn');
+    const alertPreview = document.getElementById('ai-alert-preview');
+    alertBtn.addEventListener('click', () => {
+      alertPreview.classList.toggle('hidden');
+    });
+  })();
+</script></div><aside class="w-80 shrink-0 bg-surface-container-low p-space-md flex flex-col gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container p-space-xs rounded-lg"><button class="flex-1 py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm" type="button">Alerts</button><button class="flex-1 py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Layers</button><button class="flex-1 py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Details</button></div><div class="flex flex-col gap-space-sm flex-1"><div class="bg-surface-container rounded-xl p-space-sm"><div class="font-label-sm text-label-sm text-error uppercase">Critical • Flood Surge</div><div class="font-body-md text-body-md text-on-surface">Sector 4B embankment breach detected</div></div><div class="bg-surface-container rounded-xl p-space-sm"><div class="font-label-sm text-label-sm text-primary uppercase">Warning • Land Change</div><div class="font-body-md text-body-md text-on-surface">Unpermitted clearing near Basin North</div></div></div><button class="w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors" type="button">Generate Evidence Report (PDF)</button></aside></div></main><footer class="w-full bg-surface-container-low py-space-md px-space-lg text-center"><p class="font-label-sm text-label-sm text-on-surface-variant">Protective use only • Area-level analysis • No tracking of individuals</p></footer></div></body></html>

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "S1D_IW_GRDH_1SDV_20260717T003930_20260717T003955_003706_006A22_rtc",
+    "datetime": "2026-07-17T00:39:42.606808+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.1470232116979,
+      11.75500117112866,
+      78.71783385430422,
+      13.705571286669024
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20260729T003930_20260729T003955_003881_00701D_rtc",
+    "datetime": "2026-07-29T00:39:43.107215+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.1470232116979,
+      11.754910896946441,
+      78.71774036022427,
+      13.705388881389892
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20260810T003931_20260810T003956_004056_007638_rtc",
+    "datetime": "2026-08-10T00:39:43.740114+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14674786818036,
+      11.754911993288808,
+      78.71755611968578,
+      13.705481972338461
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20260822T003931_20260822T003956_004231_007C51_rtc",
+    "datetime": "2026-08-22T00:39:44.196407+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14757623206204,
+      11.75490322172925,
+      78.71838657581704,
+      13.705565889746392
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20260903T003932_20260903T003957_004406_008273_rtc",
+    "datetime": "2026-09-03T00:39:44.667375+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14748393224532,
+      11.754904318276772,
+      78.71829445559037,
+      13.70556696940723
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20260915T003932_20260915T003957_004581_008881_rtc",
+    "datetime": "2026-09-15T00:39:45.300554+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14619640345032,
+      11.754920762972647,
+      78.7170047713472,
+      13.705575601720332
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20260927T003932_20260927T003957_004756_008E87_rtc",
+    "datetime": "2026-09-27T00:39:45.376662+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14702282289538,
+      11.754908704173785,
+      78.71774036022427,
+      13.705480893375784
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20261009T003932_20261009T003957_004931_0094AF_rtc",
+    "datetime": "2026-10-09T00:39:45.463668+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14720858865908,
+      11.754907607743494,
+      78.71783248047821,
+      13.70547927467273
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20261021T003932_20261021T003957_005106_009AB6_rtc",
+    "datetime": "2026-10-21T00:39:45.291044+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14757701007485,
+      11.75508815605534,
+      78.71838794985634,
+      13.705748835470022
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20261102T003932_20261102T003957_005281_00A0BC_rtc",
+    "datetime": "2026-11-02T00:39:45.100358+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14711706664974,
+      11.755089252502936,
+      78.71792872233212,
+      13.705842466544647
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": null
+  },
+  {
+    "id": "S1D_IW_GRDH_1SDV_20261114T003932_20261114T003957_005456_00A6B6_rtc",
+    "datetime": "2026-11-14T00:39:44.625878+00:00",
+    "orbit_direction": "descending",
+    "relative_orbit": 165,
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "bbox": [
+      76.14711706664974,
+      11.755181719491068,
+      78.71792872233212,
+      13.70575153370923
+    ],
+    "collection": "sentinel-1-rtc",
+    "selected_role": "after"
+  }
+]

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>GeoTerra AI — Mission Control</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#4f4633","tertiary":"#ffd9fd","surface-container":"#04251b","on-surface":"#c8eada","secondary-container":"#205240","outline":"#9c8f79","on-tertiary":"#580065","on-tertiary-fixed":"#36003e","surface-container-low":"#012017","on-primary-fixed":"#261a00","primary-fixed":"#ffdf9f","surface":"#001710","secondary-fixed":"#b9eed6","error-container":"#93000a","on-secondary-fixed-variant":"#1d4f3e","primary":"#ffe1a7","on-error":"#690005","inverse-surface":"#c8eada","on-secondary-fixed":"#002116","secondary":"#9ed2bb","secondary-fixed-dim":"#9ed2bb","surface-variant":"#1c3a30","surface-bright":"#203f34","on-primary-fixed-variant":"#5c4300","inverse-primary":"#795900","on-error-container":"#ffdad6","on-surface-variant":"#d3c5ac","on-primary":"#402d00","inverse-on-surface":"#17362b","surface-container-lowest":"#00120b","primary-container":"#fbbf24","background":"#001710","on-background":"#c8eada","surface-container-highest":"#1c3a30","surface-dim":"#001710","on-tertiary-fixed-variant":"#7c008e","error":"#ffb4ab","on-tertiary-container":"#9100a6","primary-fixed-dim":"#f9bd22","surface-container-high":"#102f25","on-secondary":"#003828","tertiary-fixed":"#ffd6fd","tertiary-fixed-dim":"#fbabff","surface-tint":"#f9bd22","on-secondary-container":"#90c3ad","on-primary-container":"#6c4f00","tertiary-container":"#fbaeff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1rem","margin":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"headline-lg":["Inter"],"kpi-md-mobile":["JetBrains Mono"],"body-lg":["Inter"],"headline-md":["Inter"],"kpi-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"kpi-lg-mobile":["JetBrains Mono"],"body-md":["Inter"],"label-lg":["JetBrains Mono"],"kpi-md":["JetBrains Mono"],"headline-sm":["Inter"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"kpi-md-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"kpi-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"kpi-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"500"}],"kpi-md":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-16 bg-surface-container-low z-50 flex flex-col items-center py-space-md gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-on-primary-container">satellite_alt</span></div><nav class="flex flex-col items-center gap-space-sm flex-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="#" title="Overview"><span class="material-symbols-outlined">dashboard</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="flood-monitor" href="#" title="Flood Monitor"><span class="material-symbols-outlined">water_damage</span></a><a aria-current="page" class="w-10 h-10 flex items-center justify-center transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="land-change" href="#" title="Land Change"><span class="material-symbols-outlined">terrain</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="model-&amp;-data" href="#" title="Model &amp; Data"><span class="material-symbols-outlined">hub</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="impact-&amp;-value" href="#" title="Impact &amp; Value"><span class="material-symbols-outlined">insights</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="space-systems-simulation" href="#" title="Space Systems Simulation"><span class="material-symbols-outlined">orbit</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="alerts-&amp;-reports" href="#" title="Alerts &amp; Reports"><span class="material-symbols-outlined">notifications_active</span></a><a class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="about-&amp;-method" href="#" title="About &amp; Method"><span class="material-symbols-outlined">info</span></a></nav></aside><div class="pl-16"><header class="fixed top-0 left-16 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">GeoTerra AI</span><span class="font-label-sm text-label-sm text-on-surface-variant">Satellites see it. AI measures it. Authorities act on it.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="flood-monitor" href="#">Flood Monitor</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="land-change" href="#">Land Change</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="model-&amp;-data" href="#">Model &amp; Data</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="impact-&amp;-value" href="#">Impact &amp; Value</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="space-systems-simulation" href="#">Space Systems Simulation</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="alerts-&amp;-reports" href="#">Alerts &amp; Reports</a><a class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-&amp;-method" href="#">About &amp; Method</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Demo Mode</button><button class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Daylight</button><span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">AI: cached</span><span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">SAMPLE DATA</span><button class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-bright hover:text-on-surface transition-colors" title="Fullscreen" type="button"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface"><section class="w-full px-space-lg py-space-md bg-surface-container-low"><div class="grid grid-cols-5 gap-gutter"><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Flooded Area</div><div class="font-kpi-md text-kpi-md-mobile text-primary">1,428.5 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cropland Affected</div><div class="font-kpi-md text-kpi-md-mobile text-secondary">842.0 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estimated Loss</div><div class="font-kpi-md text-kpi-md-mobile text-primary">₹18.4 Cr</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Suspicious Land-Change</div><div class="font-kpi-md text-kpi-md-mobile text-tertiary">312.4 ha</div></div><div class="bg-surface-container rounded-xl p-space-md"><div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Alerts</div><div class="font-kpi-md text-kpi-md-mobile text-error">7</div></div></div></section><div class="flex w-full"><div class="flex-1 min-w-0 px-space-lg py-space-md"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low rounded-xl p-space-md shadow-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">layers</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Land Change Detection — Track A</span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">2D ORTHO ONLY</span>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">SENTINEL-2 L2A</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">AOI: Basin North • T1: 14 Oct 2024 → T2: 28 Oct 2024 • 10m GSD</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-space-xs shadow-sm" id="ai-describe-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Describe with AI</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 xl:col-span-8 flex flex-col gap-space-md">
+<div class="relative w-full h-[460px] rounded-xl overflow-hidden bg-surface-container shadow-xl select-none" id="map-viewport">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-location="Brahmaputra River Basin, Assam, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8vzM_8dCFxncjnf9I1xt_6hLyeGVn1R0Kw28Vb-0MQSRZRMDDfqFr_euXodXToHbTFC4kwBabIX-6ICDshDrCHmUEV-oRuYzTUsuYhCsCVklhI0TW2ZSDXgfpy0bnuexbST265YpP7Fajdy2EAOtLNzrlAhGl0oGVB0FVFHZy-ns30bls2IhC2G_jrKlnsvHGkXX_l0ojoTkt1mENKqmUrd1d8p73vd5ShCdzwN-s')"></div>
+<div class="absolute inset-0 w-1/2 overflow-hidden bg-surface-container-lowest/40 backdrop-saturate-50" id="before-layer">
+<div class="w-[800px] max-w-none h-full bg-cover bg-center opacity-80" data-location="Brahmaputra River Basin, Assam, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8vzM_8dCFxncjnf9I1xt_6hLyeGVn1R0Kw28Vb-0MQSRZRMDDfqFr_euXodXToHbTFC4kwBabIX-6ICDshDrCHmUEV-oRuYzTUsuYhCsCVklhI0TW2ZSDXgfpy0bnuexbST265YpP7Fajdy2EAOtLNzrlAhGl0oGVB0FVFHZy-ns30bls2IhC2G_jrKlnsvHGkXX_l0ojoTkt1mENKqmUrd1d8p73vd5ShCdzwN-s')"></div>
+<div class="absolute top-space-md left-space-md px-space-sm py-space-xs rounded-full bg-surface/90 text-on-surface font-label-sm text-label-sm shadow-sm">
+            BEFORE • 14 OCT
+          </div>
+</div>
+<div class="absolute top-space-md right-space-md px-space-sm py-space-xs rounded-full bg-surface/90 text-primary font-label-sm text-label-sm shadow-sm">
+          AFTER • 28 OCT
+        </div>
+<div class="absolute inset-0 pointer-events-none">
+<button class="map-poly pointer-events-auto absolute top-[22%] left-[56%] w-28 h-20 rounded-xl bg-primary-container/50 hover:bg-primary-container/70 transition-all flex flex-col items-center justify-center p-space-xs shadow-lg" data-site="LC-402" type="button">
+<span class="font-label-sm text-label-sm text-on-primary-container font-bold">LC-402</span>
+<span class="px-space-xs rounded bg-surface/90 text-primary font-label-sm text-label-sm">-0.42 NDVI</span>
+</button>
+<button class="map-poly pointer-events-auto absolute top-[54%] left-[64%] w-32 h-24 rounded-xl bg-error/45 hover:bg-error/65 transition-all flex flex-col items-center justify-center p-space-xs shadow-lg" data-site="LC-409" type="button">
+<span class="font-label-sm text-label-sm text-on-error font-bold">LC-409</span>
+<span class="px-space-xs rounded bg-surface/90 text-error font-label-sm text-label-sm">-0.51 NDVI</span>
+<span class="mt-space-xs px-space-xs rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[12px]">water</span>Near River
+            </span>
+</button>
+<button class="map-poly pointer-events-auto absolute top-[36%] left-[28%] w-24 h-16 rounded-xl bg-primary/45 hover:bg-primary/65 transition-all flex flex-col items-center justify-center p-space-xs shadow-lg" data-site="LC-415" type="button">
+<span class="font-label-sm text-label-sm text-on-primary font-bold">LC-415</span>
+<span class="px-space-xs rounded bg-surface/90 text-primary font-label-sm text-label-sm">-0.34 NDVI</span>
+</button>
+</div>
+<div class="absolute top-0 bottom-0 left-1/2 -ml-0.5 w-1 bg-primary-container cursor-ew-resize z-20 flex items-center justify-center shadow-xl" id="slider-handle">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined text-[20px]">compare_arrows</span>
+</div>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-center justify-between gap-space-md bg-surface/90 backdrop-blur-md rounded-xl px-space-md py-space-sm shadow-md">
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CONFIDENCE SPECTRUM:</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface">70%</span>
+</div>
+<div class="w-20 h-2 rounded-full bg-gradient-to-r from-error via-primary-container to-primary"></div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">98%</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">flag</span>Near-River Buffer &lt; 250m
+            </span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 xl:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<span class="px-space-sm py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">
+            AI-assisted, requires official verification
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SITE: <strong class="text-primary" id="selected-site-label">LC-409</strong></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+          Recommended for official field verification
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant" id="ai-summary-text">
+          Spectral change analysis indicates a -0.51 NDVI vegetation index reduction across 48.6 ha adjacent to the primary river channel. Surface reflectance shifts are consistent with recent clearing or soil exposure and warrant standard ground-truth inspection by local authorities.
+        </p>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">NDVI TRAJECTORY (30D)</span>
+<span class="font-label-sm text-label-sm text-error">-0.51 DELTA</span>
+</div>
+<svg class="w-full h-12 text-primary" fill="none" viewbox="0 0 240 48" xmlns="http://www.w3.org/2000/svg">
+<polyline points="0,12 40,14 80,11 120,18 160,34 200,40 240,42" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></polyline>
+<circle cx="240" cy="42" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-high rounded-xl p-space-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant">CONFIDENCE</div>
+<div class="font-headline-md text-headline-md text-primary" id="selected-conf-label">94.2%</div>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant">RIVER PROXIMITY</div>
+<div class="font-headline-md text-headline-md text-secondary" id="selected-river-label">110 m</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Flagged Land-Change Polygons</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Click column headers to sort • Select a row to inspect</span>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">4 POLYGONS FLAGGED</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="land-change-table">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="p-space-md rounded-l-lg cursor-pointer hover:text-primary transition-colors" data-sort="site">Site ID ↕</th>
+<th class="p-space-md cursor-pointer hover:text-primary transition-colors" data-sort="area">Area (ha) ↕</th>
+<th class="p-space-md cursor-pointer hover:text-primary transition-colors" data-sort="ndvi">NDVI Drop ↕</th>
+<th class="p-space-md cursor-pointer hover:text-primary transition-colors" data-sort="conf">Confidence % ↕</th>
+<th class="p-space-md cursor-pointer hover:text-primary transition-colors" data-sort="river">Near River ↕</th>
+<th class="p-space-md rounded-r-lg">Verification Status</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<tr class="bg-surface-container-high/50 hover:bg-surface-container-high transition-colors cursor-pointer" data-area="48.6" data-conf="94.2" data-ndvi="-0.51" data-river="1" data-site="LC-409">
+<td class="p-space-md font-label-lg text-label-lg text-primary">LC-409</td>
+<td class="p-space-md font-label-lg text-label-lg">48.6 ha</td>
+<td class="p-space-md font-label-lg text-label-lg text-error">-0.51</td>
+<td class="p-space-md font-label-lg text-label-lg text-primary">94.2%</td>
+<td class="p-space-md"><span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Yes (110m)</span></td>
+<td class="p-space-md"><span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Potential suspicious activity: requires official verification</span></td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors cursor-pointer" data-area="31.2" data-conf="89.5" data-ndvi="-0.42" data-river="1" data-site="LC-402">
+<td class="p-space-md font-label-lg text-label-lg text-primary">LC-402</td>
+<td class="p-space-md font-label-lg text-label-lg">31.2 ha</td>
+<td class="p-space-md font-label-lg text-label-lg text-error">-0.42</td>
+<td class="p-space-md font-label-lg text-label-lg text-primary">89.5%</td>
+<td class="p-space-md"><span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Yes (210m)</span></td>
+<td class="p-space-md"><span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Potential suspicious activity: requires official verification</span></td>
+</tr>
+<tr class="bg-surface-container-high/50 hover:bg-surface-container-high transition-colors cursor-pointer" data-area="19.4" data-conf="81.0" data-ndvi="-0.34" data-river="0" data-site="LC-415">
+<td class="p-space-md font-label-lg text-label-lg text-primary">LC-415</td>
+<td class="p-space-md font-label-lg text-label-lg">19.4 ha</td>
+<td class="p-space-md font-label-lg text-label-lg text-error">-0.34</td>
+<td class="p-space-md font-label-lg text-label-lg text-primary">81.0%</td>
+<td class="p-space-md"><span class="px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">No (640m)</span></td>
+<td class="p-space-md"><span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Potential suspicious activity: requires official verification</span></td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors cursor-pointer" data-area="14.8" data-conf="74.6" data-ndvi="-0.29" data-river="0" data-site="LC-421">
+<td class="p-space-md font-label-lg text-label-lg text-primary">LC-421</td>
+<td class="p-space-md font-label-lg text-label-lg">14.8 ha</td>
+<td class="p-space-md font-label-lg text-label-lg text-error">-0.29</td>
+<td class="p-space-md font-label-lg text-label-lg text-primary">74.6%</td>
+<td class="p-space-md"><span class="px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">No (890m)</span></td>
+<td class="p-space-md"><span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Potential suspicious activity: requires official verification</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script>
+(function() {
+  const viewport = document.getElementById('map-viewport');
+  const beforeLayer = document.getElementById('before-layer');
+  const handle = document.getElementById('slider-handle');
+  let dragging = false;
+
+  function updateSlider(clientX) {
+    const rect = viewport.getBoundingClientRect();
+    let pct = ((clientX - rect.left) / rect.width) * 100;
+    pct = Math.max(5, Math.min(95, pct));
+    beforeLayer.style.width = pct + '%';
+    handle.style.left = pct + '%';
+  }
+
+  if (handle && viewport) {
+    handle.addEventListener('mousedown', () => { dragging = true; });
+    window.addEventListener('mouseup', () => { dragging = false; });
+    window.addEventListener('mousemove', (e) => {
+      if (dragging) updateSlider(e.clientX);
+    });
+  }
+
+  const aiBtn = document.getElementById('ai-describe-btn');
+  const aiText = document.getElementById('ai-summary-text');
+  const siteLabel = document.getElementById('selected-site-label');
+  const confLabel = document.getElementById('selected-conf-label');
+  const riverLabel = document.getElementById('selected-river-label');
+
+  const summaries = {
+    'LC-409': {
+      text: 'Spectral change analysis indicates a -0.51 NDVI vegetation index reduction across 48.6 ha adjacent to the primary river channel. Surface reflectance shifts are consistent with recent clearing or soil exposure and warrant standard ground-truth inspection by local authorities.',
+      conf: '94.2%',
+      river: '110 m'
+    },
+    'LC-402': {
+      text: 'Multi-temporal Sentinel-2 comparison detects a -0.42 NDVI drop over 31.2 ha within the 250m riparian buffer. Automated screening flags this parcel for routine field verification to confirm land-use status.',
+      conf: '89.5%',
+      river: '210 m'
+    },
+    'LC-415': {
+      text: 'Observed -0.34 NDVI reduction across 19.4 ha in Sector 4B. Distance from primary waterways exceeds 600m; recommended for scheduled verification during next district survey.',
+      conf: '81.0%',
+      river: '640 m'
+    },
+    'LC-421': {
+      text: 'Moderate -0.29 NDVI shift detected over 14.8 ha. Confidence is 74.6%; flagged for standard archival review and official confirmation.',
+      conf: '74.6%',
+      river: '890 m'
+    }
+  };
+
+  function selectSite(siteId) {
+    const info = summaries[siteId] || summaries['LC-409'];
+    siteLabel.textContent = siteId;
+    aiText.textContent = info.text;
+    confLabel.textContent = info.conf;
+    riverLabel.textContent = info.river;
+  }
+
+  document.querySelectorAll('.map-poly, #land-change-table tbody tr').forEach(el => {
+    el.addEventListener('click', () => {
+      const site = el.getAttribute('data-site');
+      if (site) selectSite(site);
+    });
+  });
+
+  if (aiBtn) {
+    aiBtn.addEventListener('click', () => {
+      aiText.textContent = 'AI Synthesis Updated: ' + aiText.textContent;
+    });
+  }
+
+  let sortDir = 1;
+  document.querySelectorAll('#land-change-table th[data-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.getAttribute('data-sort');
+      const tbody = document.querySelector('#land-change-table tbody');
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      sortDir *= -1;
+      rows.sort((a, b) => {
+        const valA = a.getAttribute('data-' + key);
+        const valB = b.getAttribute('data-' + key);
+        const numA = parseFloat(valA);
+        const numB = parseFloat(valB);
+        if (!isNaN(numA) && !isNaN(numB)) return (numA - numB) * sortDir;
+        return valA.localeCompare(valB) * sortDir;
+      });
+      rows.forEach(r => tbody.appendChild(r));
+    });
+  });
+})();
+</script></div><aside class="w-80 shrink-0 bg-surface-container-low p-space-md flex flex-col gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container p-space-xs rounded-lg"><button class="flex-1 py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm" type="button">Alerts</button><button class="flex-1 py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Layers</button><button class="flex-1 py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Details</button></div><div class="flex flex-col gap-space-sm flex-1"><div class="bg-surface-container rounded-xl p-space-sm"><div class="font-label-sm text-label-sm text-error uppercase">Critical • Flood Surge</div><div class="font-body-md text-body-md text-on-surface">Sector 4B embankment breach detected</div></div><div class="bg-surface-container rounded-xl p-space-sm"><div class="font-label-sm text-label-sm text-primary uppercase">Warning • Land Change</div><div class="font-body-md text-body-md text-on-surface">Unpermitted clearing near Basin North</div></div></div><button class="w-full py-space-sm px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors" type="button">Generate Evidence Report (PDF)</button></aside></div></main><footer class="w-full bg-surface-container-low py-space-md px-space-lg text-center"><p class="font-label-sm text-label-sm text-on-surface-variant">Protective use only • Area-level analysis • No tracking of individuals</p></footer></div></body></html>

@@ -1,0 +1,467 @@
+{
+  "generated_at": "2026-11-25T22:02:30.137376+00:00",
+  "aoi_name": "Bengaluru Urban & Peri-Urban Catchment",
+  "sources": {
+    "elevation": "Copernicus DEM GLO-30 (Planetary Computer STAC)",
+    "rainfall": "Open-Meteo Bengaluru (12.9716\u00b0N, 77.5946\u00b0E)",
+    "lakes_and_drains": "12 mapped Bengaluru lakes & waterbodies (OSM/JRC)",
+    "sar_water": "Sentinel-1 RTC before/after U-Net segmentation",
+    "assets": "OpenStreetMap Bengaluru extract (847 roads, 4468 buildings cached in flood corridors)"
+  },
+  "honesty_notice": "Risk zones combine real Copernicus DEM elevation, lake/drainage proximity, Open-Meteo rainfall, and OSM asset footprints. Susceptibility & rainfall scenarios are unvalidated predictive estimates, NOT confirmed actual flooding.",
+  "rainfall": {
+    "source": "Open-Meteo Bengaluru (12.9716\u00b0N, 77.5946\u00b0E)",
+    "recent_7d_mm": 24.9,
+    "observed_24h_mm": 15.0,
+    "monthly_history": [
+      {
+        "month": "2024-01",
+        "rainfall_mm": 7.5,
+        "peak_24h_mm": 2.7,
+        "heavy_rain_days": 0,
+        "risk_index": 2.3
+      },
+      {
+        "month": "2024-02",
+        "rainfall_mm": 0.0,
+        "peak_24h_mm": 0.0,
+        "heavy_rain_days": 0,
+        "risk_index": 0.0
+      },
+      {
+        "month": "2024-03",
+        "rainfall_mm": 0.0,
+        "peak_24h_mm": 0.0,
+        "heavy_rain_days": 0,
+        "risk_index": 0.0
+      },
+      {
+        "month": "2024-04",
+        "rainfall_mm": 0.1,
+        "peak_24h_mm": 0.1,
+        "heavy_rain_days": 0,
+        "risk_index": 0.0
+      },
+      {
+        "month": "2024-05",
+        "rainfall_mm": 151.5,
+        "peak_24h_mm": 25.2,
+        "heavy_rain_days": 0,
+        "risk_index": 47.3
+      },
+      {
+        "month": "2024-06",
+        "rainfall_mm": 136.4,
+        "peak_24h_mm": 28.0,
+        "heavy_rain_days": 0,
+        "risk_index": 42.6
+      },
+      {
+        "month": "2024-07",
+        "rainfall_mm": 173.2,
+        "peak_24h_mm": 17.4,
+        "heavy_rain_days": 0,
+        "risk_index": 54.1
+      },
+      {
+        "month": "2024-08",
+        "rainfall_mm": 184.4,
+        "peak_24h_mm": 19.7,
+        "heavy_rain_days": 0,
+        "risk_index": 57.6
+      },
+      {
+        "month": "2024-09",
+        "rainfall_mm": 64.9,
+        "peak_24h_mm": 11.9,
+        "heavy_rain_days": 0,
+        "risk_index": 20.3
+      },
+      {
+        "month": "2024-10",
+        "rainfall_mm": 240.4,
+        "peak_24h_mm": 31.5,
+        "heavy_rain_days": 1,
+        "risk_index": 87.1
+      },
+      {
+        "month": "2024-11",
+        "rainfall_mm": 44.8,
+        "peak_24h_mm": 10.0,
+        "heavy_rain_days": 0,
+        "risk_index": 14.0
+      },
+      {
+        "month": "2024-12",
+        "rainfall_mm": 77.7,
+        "peak_24h_mm": 35.0,
+        "heavy_rain_days": 1,
+        "risk_index": 36.3
+      },
+      {
+        "month": "2025-01",
+        "rainfall_mm": 7.1,
+        "peak_24h_mm": 6.0,
+        "heavy_rain_days": 0,
+        "risk_index": 2.2
+      },
+      {
+        "month": "2025-02",
+        "rainfall_mm": 0.0,
+        "peak_24h_mm": 0.0,
+        "heavy_rain_days": 0,
+        "risk_index": 0.0
+      },
+      {
+        "month": "2025-03",
+        "rainfall_mm": 28.7,
+        "peak_24h_mm": 23.8,
+        "heavy_rain_days": 0,
+        "risk_index": 9.0
+      },
+      {
+        "month": "2025-04",
+        "rainfall_mm": 31.6,
+        "peak_24h_mm": 10.8,
+        "heavy_rain_days": 0,
+        "risk_index": 9.9
+      },
+      {
+        "month": "2025-05",
+        "rainfall_mm": 159.3,
+        "peak_24h_mm": 22.6,
+        "heavy_rain_days": 0,
+        "risk_index": 49.8
+      },
+      {
+        "month": "2025-06",
+        "rainfall_mm": 85.6,
+        "peak_24h_mm": 11.9,
+        "heavy_rain_days": 0,
+        "risk_index": 26.7
+      },
+      {
+        "month": "2025-07",
+        "rainfall_mm": 190.3,
+        "peak_24h_mm": 21.1,
+        "heavy_rain_days": 0,
+        "risk_index": 59.5
+      },
+      {
+        "month": "2025-08",
+        "rainfall_mm": 175.7,
+        "peak_24h_mm": 17.4,
+        "heavy_rain_days": 0,
+        "risk_index": 54.9
+      },
+      {
+        "month": "2025-09",
+        "rainfall_mm": 126.3,
+        "peak_24h_mm": 16.5,
+        "heavy_rain_days": 0,
+        "risk_index": 39.5
+      },
+      {
+        "month": "2025-10",
+        "rainfall_mm": 195.8,
+        "peak_24h_mm": 35.4,
+        "heavy_rain_days": 1,
+        "risk_index": 73.2
+      },
+      {
+        "month": "2025-11",
+        "rainfall_mm": 22.9,
+        "peak_24h_mm": 6.3,
+        "heavy_rain_days": 0,
+        "risk_index": 7.2
+      },
+      {
+        "month": "2025-12",
+        "rainfall_mm": 11.5,
+        "peak_24h_mm": 7.5,
+        "heavy_rain_days": 0,
+        "risk_index": 3.6
+      }
+    ]
+  },
+  "lakes": [
+    {
+      "name": "Bellandur Lake",
+      "lat": 12.9369,
+      "lon": 77.668,
+      "type": "lake"
+    },
+    {
+      "name": "Varthur Lake",
+      "lat": 12.9438,
+      "lon": 77.7375,
+      "type": "lake"
+    },
+    {
+      "name": "Agara Lake",
+      "lat": 12.9212,
+      "lon": 77.6416,
+      "type": "lake"
+    },
+    {
+      "name": "Madiwala Lake",
+      "lat": 12.9052,
+      "lon": 77.6184,
+      "type": "lake"
+    },
+    {
+      "name": "Hebbal Lake",
+      "lat": 13.0457,
+      "lon": 77.5861,
+      "type": "lake"
+    },
+    {
+      "name": "Yelahanka Lake",
+      "lat": 13.1088,
+      "lon": 77.5944,
+      "type": "lake"
+    },
+    {
+      "name": "Ulsoor Lake",
+      "lat": 12.9813,
+      "lon": 77.6203,
+      "type": "lake"
+    },
+    {
+      "name": "Sankey Tank",
+      "lat": 13.0099,
+      "lon": 77.574,
+      "type": "lake"
+    },
+    {
+      "name": "Doddanekundi Lake",
+      "lat": 12.9776,
+      "lon": 77.6845,
+      "type": "lake"
+    },
+    {
+      "name": "Kaikondrahalli Lake",
+      "lat": 12.9128,
+      "lon": 77.6746,
+      "type": "lake"
+    },
+    {
+      "name": "Puttenahalli Lake",
+      "lat": 12.8902,
+      "lon": 77.5855,
+      "type": "lake"
+    },
+    {
+      "name": "Nagavara Lake",
+      "lat": 13.0445,
+      "lon": 77.6064,
+      "type": "lake"
+    }
+  ],
+  "wards": [
+    {
+      "ward_no": 150,
+      "name": "Bellandur",
+      "zone": "Mahadevapura",
+      "lat": 12.9279,
+      "lon": 77.6762,
+      "major_lake": "Bellandur Lake",
+      "elevation_m": 882.8,
+      "depression_m": -4.48,
+      "distance_to_lake_km": 1.34,
+      "base_susceptibility": 32.3,
+      "s1_observed_water_ha": 1.36,
+      "osm_roads_in_zone_km": 3.0,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 149,
+      "name": "Varthur",
+      "zone": "Mahadevapura",
+      "lat": 12.9406,
+      "lon": 77.7469,
+      "major_lake": "Varthur Lake",
+      "elevation_m": 872.2,
+      "depression_m": -1.39,
+      "distance_to_lake_km": 1.08,
+      "base_susceptibility": 40.2,
+      "s1_observed_water_ha": 1.55,
+      "osm_roads_in_zone_km": 4.8,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 85,
+      "name": "Doddanekundi",
+      "zone": "Mahadevapura",
+      "lat": 12.9765,
+      "lon": 77.697,
+      "major_lake": "Doddanekundi Lake",
+      "elevation_m": 880.8,
+      "depression_m": 8.01,
+      "distance_to_lake_km": 1.36,
+      "base_susceptibility": 52.4,
+      "s1_observed_water_ha": 3.48,
+      "osm_roads_in_zone_km": 11.39,
+      "osm_buildings_in_zone": 579
+    },
+    {
+      "ward_no": 151,
+      "name": "Koramangala",
+      "zone": "South",
+      "lat": 12.9352,
+      "lon": 77.6245,
+      "major_lake": "Koramangala / Ejipura Drain",
+      "elevation_m": 897.7,
+      "depression_m": -3.88,
+      "distance_to_lake_km": 2.41,
+      "base_susceptibility": 15.3,
+      "s1_observed_water_ha": 0.25,
+      "osm_roads_in_zone_km": 0.0,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 174,
+      "name": "HSR Layout / Agara",
+      "zone": "Bommanahalli",
+      "lat": 12.9121,
+      "lon": 77.6446,
+      "major_lake": "Agara Lake",
+      "elevation_m": 895.9,
+      "depression_m": -3.38,
+      "distance_to_lake_km": 1.06,
+      "base_susceptibility": 29.6,
+      "s1_observed_water_ha": 0.23,
+      "osm_roads_in_zone_km": 0.0,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 176,
+      "name": "BTM / Madiwala",
+      "zone": "South",
+      "lat": 12.9166,
+      "lon": 77.6101,
+      "major_lake": "Madiwala Lake",
+      "elevation_m": 908.6,
+      "depression_m": -5.0,
+      "distance_to_lake_km": 1.55,
+      "base_susceptibility": 18.0,
+      "s1_observed_water_ha": 0.0,
+      "osm_roads_in_zone_km": 0.0,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 21,
+      "name": "Hebbal",
+      "zone": "Yelahanka",
+      "lat": 13.0358,
+      "lon": 77.597,
+      "major_lake": "Hebbal Lake",
+      "elevation_m": 907.4,
+      "depression_m": -2.69,
+      "distance_to_lake_km": 1.4,
+      "base_susceptibility": 20.3,
+      "s1_observed_water_ha": 0.3,
+      "osm_roads_in_zone_km": 1.7,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 4,
+      "name": "Yelahanka",
+      "zone": "Yelahanka",
+      "lat": 13.1007,
+      "lon": 77.5963,
+      "major_lake": "Yelahanka Lake",
+      "elevation_m": 907.3,
+      "depression_m": -4.39,
+      "distance_to_lake_km": 0.92,
+      "base_susceptibility": 26.0,
+      "s1_observed_water_ha": 0.0,
+      "osm_roads_in_zone_km": 0.0,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 134,
+      "name": "Vrishabhavathi / Nayandahalli",
+      "zone": "RR Nagar",
+      "lat": 12.9425,
+      "lon": 77.5238,
+      "major_lake": "Vrishabhavathi Valley Drain",
+      "elevation_m": 816.1,
+      "depression_m": 10.7,
+      "distance_to_lake_km": 8.84,
+      "base_susceptibility": 63.6,
+      "s1_observed_water_ha": 0.0,
+      "osm_roads_in_zone_km": 0.0,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 195,
+      "name": "Konanakunte / Puttenahalli",
+      "zone": "Bommanahalli",
+      "lat": 12.8856,
+      "lon": 77.5752,
+      "major_lake": "Puttenahalli Lake",
+      "elevation_m": 906.9,
+      "depression_m": 8.16,
+      "distance_to_lake_km": 1.22,
+      "base_susceptibility": 42.5,
+      "s1_observed_water_ha": 0.0,
+      "osm_roads_in_zone_km": 0.0,
+      "osm_buildings_in_zone": 0
+    },
+    {
+      "ward_no": 90,
+      "name": "Ulsoor / Halasuru",
+      "zone": "East",
+      "lat": 12.9817,
+      "lon": 77.6285,
+      "major_lake": "Ulsoor Lake",
+      "elevation_m": 899.1,
+      "depression_m": 2.02,
+      "distance_to_lake_km": 0.89,
+      "base_susceptibility": 35.9,
+      "s1_observed_water_ha": 6.17,
+      "osm_roads_in_zone_km": 29.12,
+      "osm_buildings_in_zone": 595
+    },
+    {
+      "ward_no": 64,
+      "name": "Rajajinagar (Ridge Baseline)",
+      "zone": "West",
+      "lat": 12.9982,
+      "lon": 77.553,
+      "major_lake": "Sankey Tank",
+      "elevation_m": 908.4,
+      "depression_m": 3.98,
+      "distance_to_lake_km": 2.61,
+      "base_susceptibility": 20.6,
+      "s1_observed_water_ha": 0.0,
+      "osm_roads_in_zone_km": 0.0,
+      "osm_buildings_in_zone": 0
+    }
+  ],
+  "historical_events": [
+    {
+      "year": 2022,
+      "event": "Sep 2022 East/South Cloudburst Floods",
+      "peak_24h_mm": 131.6,
+      "hotspots": "Bellandur, Varthur, Ecospace ORR, Koramangala",
+      "source": "IMD / KSNDMC records"
+    },
+    {
+      "year": 2023,
+      "event": "May 2023 Pre-Monsoon Underpass Flooding",
+      "peak_24h_mm": 74.2,
+      "hotspots": "KR Circle, Maharani Underpass, Nayandahalli",
+      "source": "KSNDMC / BBMP logs"
+    },
+    {
+      "year": 2024,
+      "event": "Oct 2024 Northeast Monsoon Waterlogging",
+      "peak_24h_mm": 103.5,
+      "hotspots": "Yelahanka Kendriya Vihar, Hebbal, Manyata Corridor",
+      "source": "KSNDMC / Open-Meteo Archive"
+    }
+  ],
+  "zones_count": 323
+}
